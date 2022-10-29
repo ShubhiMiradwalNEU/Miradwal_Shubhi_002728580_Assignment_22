@@ -6,65 +6,83 @@ package model;
 
 import java.util.ArrayList;
 import java.util.List;
-import static model.Person.persondirectory;
+import static model.Patient.patientDirectory;
 
 /**
  *
- * @author shubhimiradwal
+ * @author user
  */
 public class VitalSigns {
-    double temperature;
-    double bloodPressure;
-    double weight;
-    double height;
+    Double temperature;
+    Double bloodPressure;
+    int weight;
+    int height;
+    static public List<VitalSigns> vitalSigns= new ArrayList<VitalSigns>();
     
-    List<VitalSigns> vitalsign= new ArrayList<VitalSigns>();
+    public VitalSigns(){
+        
+    }
 
-    public VitalSigns(double temperature, double bloodPressure, double weight, double height) {
+    public VitalSigns(Double temperature, Double bloodPressure, int weight, int height) {
         this.temperature = temperature;
         this.bloodPressure = bloodPressure;
         this.weight = weight;
         this.height = height;
     }
 
-    public VitalSigns() {
-        
-                }
+    @Override
+    public String toString() {
+        return "VitalSigns{" + "temperature=" + temperature + ", bloodPressure=" + bloodPressure + ", weight=" + weight + ", height=" + height + '}';
+    }
 
-    public double getTemperature() {
+    public Double getTemperature() {
         return temperature;
     }
 
-    public void setTemperature(double temperature) {
+    public void setTemperature(Double temperature) {
         this.temperature = temperature;
     }
 
-    public double getBloodPressure() {
+    public Double getBloodPressure() {
         return bloodPressure;
     }
 
-    public void setBloodPressure(double bloodPressure) {
+    public void setBloodPressure(Double bloodPressure) {
         this.bloodPressure = bloodPressure;
     }
 
-    public double getWeight() {
+    public int getWeight() {
         return weight;
     }
 
-    public void setWeight(double weight) {
+    public void setWeight(int weight) {
         this.weight = weight;
     }
 
-    public double getHeight() {
+    public int getHeight() {
         return height;
     }
 
-    public void setHeight(double height) {
+    public void setHeight(int height) {
         this.height = height;
     }
+
+    public static List<VitalSigns> getVitalSigns() {
+        return vitalSigns;
+    }
+
+    public static void setVitalSigns(List<VitalSigns> vitalSigns) {
+        VitalSigns.vitalSigns = vitalSigns;
+    }
     
-     public void  addvitalsign(double temperature, double bloodPressure, double weight, double height) 
+
+    public void  addNewVitalSigns(Double temperature, Double bloodPressure, int weight, int height) 
     {
-        vitalsign.add(new VitalSigns(temperature, bloodPressure, weight, height));
-    }  
+        vitalSigns.add(new VitalSigns(temperature,bloodPressure,weight, height));
+        System.out.println("Vital Signs for Patient Added Successfully !!");
+           }
+    
+    public List<VitalSigns> getList() {
+       return vitalSigns;
+   }
 }
