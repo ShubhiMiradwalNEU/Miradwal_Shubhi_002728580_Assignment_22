@@ -45,6 +45,11 @@ public class DoctorJFrame extends javax.swing.JFrame {
         btnProfile.setText("Profile");
 
         btnBack.setText("Back");
+        btnBack.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBackActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -104,6 +109,14 @@ public class DoctorJFrame extends javax.swing.JFrame {
         ShowAppointmentDoctor showAppointment = new ShowAppointmentDoctor();
         splitPane.setRightComponent(showAppointment);
     }//GEN-LAST:event_btnViewPatientsActionPerformed
+
+    private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
+        // TODO add your handling code here:
+       MainJFrame mainpage= new MainJFrame();
+       mainpage.setVisible(true);
+       DoctorJFrame  doctor=new DoctorJFrame();
+       doctor.setVisible(true);
+    }//GEN-LAST:event_btnBackActionPerformed
 
     /**
      * @param args the command line arguments

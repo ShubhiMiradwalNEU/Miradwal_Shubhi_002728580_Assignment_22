@@ -182,7 +182,7 @@ public class ShowAppointmentDoctor extends javax.swing.JPanel {
         Double Patienttemp= Double.parseDouble(txtPatienttemperature.getText());
         String issue= txtPatientDescription.getText();        
         vs.addNewVitalSigns(doctorName,PatientName,Patienttemp, BloodPressure, issue);
-        
+        JOptionPane.showMessageDialog(this, "Vital Signs added in "+PatientName);
     }//GEN-LAST:event_btnPatientsubmitActionPerformed
 
 
