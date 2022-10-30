@@ -141,7 +141,7 @@ public class SystemAdminJFrame extends javax.swing.JFrame {
 
         jPanel2.setBackground(new java.awt.Color(204, 255, 255));
 
-        jLabel1.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Academy Engraved LET", 1, 18)); // NOI18N
         jLabel1.setText("System Admin Dashboard");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -151,7 +151,7 @@ public class SystemAdminJFrame extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(268, 268, 268)
                 .addComponent(jLabel1)
-                .addContainerGap(324, Short.MAX_VALUE))
+                .addContainerGap(347, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

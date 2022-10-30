@@ -48,22 +48,22 @@ public class AddCommunityAdminJPanel extends javax.swing.JPanel {
         jPanel1.setBackground(new java.awt.Color(204, 255, 255));
         jPanel1.setPreferredSize(new java.awt.Dimension(900, 500));
 
-        lblName.setFont(new java.awt.Font("Lantinghei TC", 1, 14)); // NOI18N
-        lblName.setForeground(new java.awt.Color(0, 102, 102));
+        lblName.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
+        lblName.setForeground(new java.awt.Color(0, 51, 51));
         lblName.setText("NAME");
 
-        lblGender.setFont(new java.awt.Font("Lantinghei TC", 1, 14)); // NOI18N
-        lblGender.setForeground(new java.awt.Color(0, 102, 102));
+        lblGender.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
+        lblGender.setForeground(new java.awt.Color(0, 51, 51));
         lblGender.setText("GENDER");
 
         comboBoxGender.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Female", "Male" }));
 
-        lblHouse.setFont(new java.awt.Font("Lantinghei TC", 1, 14)); // NOI18N
-        lblHouse.setForeground(new java.awt.Color(0, 102, 102));
+        lblHouse.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
+        lblHouse.setForeground(new java.awt.Color(0, 51, 51));
         lblHouse.setText("HOUSE");
 
-        lblCity.setFont(new java.awt.Font("Lantinghei TC", 1, 14)); // NOI18N
-        lblCity.setForeground(new java.awt.Color(0, 102, 102));
+        lblCity.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
+        lblCity.setForeground(new java.awt.Color(0, 51, 51));
         lblCity.setText("CITY");
 
         btnSave.setBackground(new java.awt.Color(0, 0, 0));

@@ -133,7 +133,7 @@ public class MainJFrame extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(204, 255, 255));
 
         jLabel1.setBackground(new java.awt.Color(153, 255, 255));
-        jLabel1.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Academy Engraved LET", 1, 18)); // NOI18N
         jLabel1.setText("SELECT USER TYPE");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);

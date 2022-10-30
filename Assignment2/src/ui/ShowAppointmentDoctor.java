@@ -77,32 +77,46 @@ public class ShowAppointmentDoctor extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(tblappointmentdoctor);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 891, 127));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 130));
 
+        lblPatientVitalSign.setFont(new java.awt.Font("Academy Engraved LET", 1, 18)); // NOI18N
         lblPatientVitalSign.setForeground(new java.awt.Color(0, 102, 102));
         lblPatientVitalSign.setText("Vital Signs");
-        add(lblPatientVitalSign, new org.netbeans.lib.awtextra.AbsoluteConstraints(349, 145, 94, 28));
+        add(lblPatientVitalSign, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 150, 94, 28));
 
+        lblpatienttemperature.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
         lblpatienttemperature.setForeground(new java.awt.Color(0, 102, 102));
         lblpatienttemperature.setText("Temperature");
         add(lblpatienttemperature, new org.netbeans.lib.awtextra.AbsoluteConstraints(226, 264, -1, -1));
+
+        txtPatienttemperature.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
         add(txtPatienttemperature, new org.netbeans.lib.awtextra.AbsoluteConstraints(454, 256, 217, 34));
 
+        lblPatientBloodPressure.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
         lblPatientBloodPressure.setForeground(new java.awt.Color(0, 102, 102));
         lblPatientBloodPressure.setText("Blood Pressure");
         add(lblPatientBloodPressure, new org.netbeans.lib.awtextra.AbsoluteConstraints(226, 328, -1, -1));
+
+        txtPatientBloodPressure.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
         add(txtPatientBloodPressure, new org.netbeans.lib.awtextra.AbsoluteConstraints(454, 313, 217, 32));
 
+        lblPatientDescription.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
         lblPatientDescription.setForeground(new java.awt.Color(0, 102, 102));
         lblPatientDescription.setText("Description");
         add(lblPatientDescription, new org.netbeans.lib.awtextra.AbsoluteConstraints(227, 385, -1, -1));
+
+        txtPatientDescription.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
         add(txtPatientDescription, new org.netbeans.lib.awtextra.AbsoluteConstraints(454, 382, 217, -1));
 
+        lblPatientname.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
         lblPatientname.setForeground(new java.awt.Color(0, 102, 102));
         lblPatientname.setText("Name");
         add(lblPatientname, new org.netbeans.lib.awtextra.AbsoluteConstraints(226, 189, 58, 26));
+
+        txtPatientName.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
         add(txtPatientName, new org.netbeans.lib.awtextra.AbsoluteConstraints(454, 187, 217, 32));
 
+        btnPatientsubmit.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
         btnPatientsubmit.setText("Submit");
         btnPatientsubmit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

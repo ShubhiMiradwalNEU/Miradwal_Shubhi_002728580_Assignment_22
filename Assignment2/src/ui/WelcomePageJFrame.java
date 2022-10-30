@@ -34,10 +34,11 @@ public class WelcomePageJFrame extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(204, 255, 255));
 
-        jLabel2.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Academy Engraved LET", 1, 18)); // NOI18N
         jLabel2.setText("WELCOME TO THE HOSPITAL MANAGEMENT SYSTEM");
 
         jButton1.setBackground(new java.awt.Color(0, 0, 0));
+        jButton1.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
         jButton1.setForeground(new java.awt.Color(204, 255, 255));
         jButton1.setText("Click to Continue...");
         jButton1.addActionListener(new java.awt.event.ActionListener() {

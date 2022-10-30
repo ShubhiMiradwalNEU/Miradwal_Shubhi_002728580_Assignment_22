@@ -68,9 +68,10 @@ public class DoctorsInHospitalJPanel extends javax.swing.JPanel {
 
         add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 51, 1000, 350));
 
+        jLabel1.setFont(new java.awt.Font("Academy Engraved LET", 1, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 102, 102));
         jLabel1.setText("DOCTOR IN HOSPITAL");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 10, 140, 30));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 10, 230, 30));
     }// </editor-fold>//GEN-END:initComponents
 
     private void tblAddDoctorsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tblAddDoctorsMouseClicked

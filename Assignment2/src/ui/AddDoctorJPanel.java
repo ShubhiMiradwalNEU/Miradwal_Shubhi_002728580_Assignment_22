@@ -49,46 +49,46 @@ public class AddDoctorJPanel extends javax.swing.JPanel {
         setBackground(new java.awt.Color(204, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        lblName.setFont(new java.awt.Font("Centaur", 0, 14)); // NOI18N
-        lblName.setForeground(new java.awt.Color(0, 102, 102));
+        lblName.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
+        lblName.setForeground(new java.awt.Color(0, 51, 51));
         lblName.setText("NAME");
-        add(lblName, new org.netbeans.lib.awtextra.AbsoluteConstraints(301, 80, 111, -1));
+        add(lblName, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 160, 111, -1));
 
         txtName.setFont(new java.awt.Font("Centaur", 0, 14)); // NOI18N
-        add(txtName, new org.netbeans.lib.awtextra.AbsoluteConstraints(477, 77, 137, -1));
+        add(txtName, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 160, 137, -1));
 
-        lblGender.setFont(new java.awt.Font("Centaur", 0, 14)); // NOI18N
-        lblGender.setForeground(new java.awt.Color(0, 102, 102));
+        lblGender.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
+        lblGender.setForeground(new java.awt.Color(0, 51, 51));
         lblGender.setText("GENDER");
-        add(lblGender, new org.netbeans.lib.awtextra.AbsoluteConstraints(301, 121, 111, -1));
+        add(lblGender, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 200, 111, -1));
 
         comboBoxGender.setFont(new java.awt.Font("Centaur", 0, 14)); // NOI18N
         comboBoxGender.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Female", "Male" }));
-        add(comboBoxGender, new org.netbeans.lib.awtextra.AbsoluteConstraints(477, 118, 137, -1));
+        add(comboBoxGender, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 200, 137, -1));
 
-        lblHouse.setFont(new java.awt.Font("Centaur", 0, 14)); // NOI18N
-        lblHouse.setForeground(new java.awt.Color(0, 102, 102));
+        lblHouse.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
+        lblHouse.setForeground(new java.awt.Color(0, 51, 51));
         lblHouse.setText("HOUSE");
-        add(lblHouse, new org.netbeans.lib.awtextra.AbsoluteConstraints(301, 203, 111, -1));
+        add(lblHouse, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 280, 111, -1));
 
         txtHouse.setFont(new java.awt.Font("Centaur", 0, 14)); // NOI18N
-        add(txtHouse, new org.netbeans.lib.awtextra.AbsoluteConstraints(477, 200, 137, -1));
+        add(txtHouse, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 280, 137, -1));
 
-        lblCity.setFont(new java.awt.Font("Centaur", 0, 14)); // NOI18N
-        lblCity.setForeground(new java.awt.Color(0, 102, 102));
+        lblCity.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
+        lblCity.setForeground(new java.awt.Color(0, 51, 51));
         lblCity.setText("CITY");
-        add(lblCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(301, 244, 111, -1));
+        add(lblCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 320, 111, -1));
 
         txtCity.setFont(new java.awt.Font("Centaur", 0, 14)); // NOI18N
-        add(txtCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(477, 241, 137, -1));
+        add(txtCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 320, 137, -1));
 
-        lblPhysicianType.setFont(new java.awt.Font("Centaur", 0, 14)); // NOI18N
+        lblPhysicianType.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
         lblPhysicianType.setForeground(new java.awt.Color(0, 102, 102));
         lblPhysicianType.setText("PHYSICIAN TYPE");
-        add(lblPhysicianType, new org.netbeans.lib.awtextra.AbsoluteConstraints(301, 162, -1, -1));
+        add(lblPhysicianType, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 240, -1, -1));
 
         txtPhysicianType.setFont(new java.awt.Font("Centaur", 0, 14)); // NOI18N
-        add(txtPhysicianType, new org.netbeans.lib.awtextra.AbsoluteConstraints(477, 159, 137, -1));
+        add(txtPhysicianType, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 240, 137, -1));
 
         btnSave.setBackground(new java.awt.Color(0, 0, 0));
         btnSave.setFont(new java.awt.Font("Centaur", 0, 14)); // NOI18N
@@ -99,15 +99,15 @@ public class AddDoctorJPanel extends javax.swing.JPanel {
                 btnSaveActionPerformed(evt);
             }
         });
-        add(btnSave, new org.netbeans.lib.awtextra.AbsoluteConstraints(397, 343, 88, -1));
+        add(btnSave, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 450, 110, 40));
 
-        lblHospitalName.setFont(new java.awt.Font("Centaur", 0, 14)); // NOI18N
-        lblHospitalName.setForeground(new java.awt.Color(0, 102, 102));
+        lblHospitalName.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
+        lblHospitalName.setForeground(new java.awt.Color(0, 51, 51));
         lblHospitalName.setText("HOSPITAL NAME");
-        add(lblHospitalName, new org.netbeans.lib.awtextra.AbsoluteConstraints(301, 285, -1, -1));
+        add(lblHospitalName, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 360, -1, -1));
 
         txtHospitalName.setFont(new java.awt.Font("Centaur", 0, 14)); // NOI18N
-        add(txtHospitalName, new org.netbeans.lib.awtextra.AbsoluteConstraints(477, 282, 137, -1));
+        add(txtHospitalName, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 360, 137, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaveActionPerformed

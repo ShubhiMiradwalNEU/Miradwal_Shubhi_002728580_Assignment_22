@@ -72,11 +72,12 @@ public class DoctorListPatientJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(tblDoctor);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 43, 735, 199));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(5, 70, 740, 199));
 
         jLabel1.setBackground(new java.awt.Color(0, 102, 102));
+        jLabel1.setFont(new java.awt.Font("Academy Engraved LET", 1, 18)); // NOI18N
         jLabel1.setText("Book Doctor Appointment");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(283, 8, 168, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(283, 8, 230, 30));
 
         btnBookDoctor.setBackground(new java.awt.Color(0, 0, 0));
         btnBookDoctor.setForeground(new java.awt.Color(255, 255, 255));
@@ -86,7 +87,7 @@ public class DoctorListPatientJPanel extends javax.swing.JPanel {
                 btnBookDoctorActionPerformed(evt);
             }
         });
-        add(btnBookDoctor, new org.netbeans.lib.awtextra.AbsoluteConstraints(324, 248, -1, -1));
+        add(btnBookDoctor, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 300, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void tblDoctorMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tblDoctorMouseClicked

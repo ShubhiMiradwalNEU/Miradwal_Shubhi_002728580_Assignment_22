@@ -85,25 +85,31 @@ public class ShowDoctorJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(tblDoctor);
 
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 41, 1008, 106));
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(4, 7, 1010, 140));
 
+        lblName.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
         lblName.setForeground(new java.awt.Color(0, 102, 102));
         lblName.setText("NAME");
-        jPanel1.add(lblName, new org.netbeans.lib.awtextra.AbsoluteConstraints(39, 156, 114, -1));
-        jPanel1.add(txtName, new org.netbeans.lib.awtextra.AbsoluteConstraints(171, 153, 106, -1));
+        jPanel1.add(lblName, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 180, 114, -1));
+        jPanel1.add(txtName, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 180, 106, -1));
 
+        lblGender.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
         lblGender.setForeground(new java.awt.Color(0, 102, 102));
         lblGender.setText("GENDER");
-        jPanel1.add(lblGender, new org.netbeans.lib.awtextra.AbsoluteConstraints(39, 200, -1, -1));
+        jPanel1.add(lblGender, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 230, -1, -1));
 
+        lblHouse.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
         lblHouse.setForeground(new java.awt.Color(0, 102, 102));
+        lblHouse.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblHouse.setText("HOUSE");
-        jPanel1.add(lblHouse, new org.netbeans.lib.awtextra.AbsoluteConstraints(39, 291, -1, -1));
+        jPanel1.add(lblHouse, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 320, -1, -1));
 
+        lblCity.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
         lblCity.setForeground(new java.awt.Color(0, 102, 102));
+        lblCity.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCity.setText("CITY");
-        jPanel1.add(lblCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(39, 329, -1, -1));
-        jPanel1.add(txtCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(171, 323, 106, -1));
+        jPanel1.add(lblCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 370, -1, -1));
+        jPanel1.add(txtCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 360, 106, -1));
 
         btnUpdate.setBackground(new java.awt.Color(0, 0, 0));
         btnUpdate.setForeground(new java.awt.Color(255, 255, 255));
@@ -126,20 +132,23 @@ public class ShowDoctorJPanel extends javax.swing.JPanel {
         jPanel1.add(btnDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(525, 153, -1, -1));
 
         comboGender.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Female", "Male" }));
-        jPanel1.add(comboGender, new org.netbeans.lib.awtextra.AbsoluteConstraints(171, 194, 106, -1));
+        jPanel1.add(comboGender, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 220, 106, -1));
 
+        lblPhysicianType.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
         lblPhysicianType.setForeground(new java.awt.Color(0, 102, 102));
         lblPhysicianType.setText("PHYSICIAN TYPE");
-        jPanel1.add(lblPhysicianType, new org.netbeans.lib.awtextra.AbsoluteConstraints(39, 245, -1, -1));
-        jPanel1.add(txtPhysicianType, new org.netbeans.lib.awtextra.AbsoluteConstraints(171, 242, 106, -1));
-        jPanel1.add(txtHouse, new org.netbeans.lib.awtextra.AbsoluteConstraints(171, 288, 106, -1));
+        jPanel1.add(lblPhysicianType, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 270, -1, -1));
+        jPanel1.add(txtPhysicianType, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 260, 106, -1));
+        jPanel1.add(txtHouse, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 310, 106, -1));
 
+        lblHospitalName.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
         lblHospitalName.setForeground(new java.awt.Color(0, 102, 102));
+        lblHospitalName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblHospitalName.setText("HOSPITAL NAME");
-        jPanel1.add(lblHospitalName, new org.netbeans.lib.awtextra.AbsoluteConstraints(39, 367, -1, -1));
-        jPanel1.add(txtHospitalName, new org.netbeans.lib.awtextra.AbsoluteConstraints(171, 364, 106, -1));
+        jPanel1.add(lblHospitalName, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 420, -1, -1));
+        jPanel1.add(txtHospitalName, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 420, 106, -1));
 
-        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1020, 430));
+        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1020, 500));
     }// </editor-fold>//GEN-END:initComponents
 
     private void tblDoctorMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tblDoctorMouseClicked

@@ -87,28 +87,28 @@ public class LoginJPanel extends javax.swing.JPanel {
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lblUsername.setBackground(new java.awt.Color(0, 0, 0));
-        lblUsername.setFont(new java.awt.Font("Nanum Gothic", 1, 14)); // NOI18N
+        lblUsername.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
         lblUsername.setForeground(new java.awt.Color(0, 102, 102));
         lblUsername.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblUsername.setText("USERNAME");
-        add(lblUsername, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 140, 92, 50));
+        add(lblUsername, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 170, 92, 50));
 
-        txtUsername.setFont(new java.awt.Font("Nanum Gothic", 1, 14)); // NOI18N
+        txtUsername.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
         txtUsername.setAlignmentX(0.0F);
-        add(txtUsername, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 140, 170, 50));
+        add(txtUsername, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 170, 170, 50));
 
-        lblPassword.setFont(new java.awt.Font("Nanum Gothic", 1, 14)); // NOI18N
+        lblPassword.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
         lblPassword.setForeground(new java.awt.Color(0, 102, 102));
         lblPassword.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblPassword.setText("PASSWORD");
-        add(lblPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 200, 92, 50));
+        add(lblPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 230, 92, 50));
 
-        jPasswordField1.setFont(new java.awt.Font("Nanum Gothic", 1, 14)); // NOI18N
+        jPasswordField1.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
         jPasswordField1.setAlignmentX(0.0F);
-        add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 200, 170, 50));
+        add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 230, 170, 50));
 
         btnLogin.setBackground(new java.awt.Color(0, 0, 0));
-        btnLogin.setFont(new java.awt.Font("Nanum Gothic", 1, 14)); // NOI18N
+        btnLogin.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
         btnLogin.setForeground(new java.awt.Color(255, 255, 255));
         btnLogin.setText("LOGIN");
         btnLogin.addActionListener(new java.awt.event.ActionListener() {
@@ -116,7 +116,7 @@ public class LoginJPanel extends javax.swing.JPanel {
                 btnLoginActionPerformed(evt);
             }
         });
-        add(btnLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 310, -1, 40));
+        add(btnLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 340, -1, 40));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLoginActionPerformed

@@ -76,26 +76,36 @@ Person per= new Person();
         });
         jScrollPane1.setViewportView(tblCommunityAdmin);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, 683, 106));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, 990, 140));
 
+        lblCommunityAdminname.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
         lblCommunityAdminname.setForeground(new java.awt.Color(0, 102, 102));
         lblCommunityAdminname.setText("Name");
-        add(lblCommunityAdminname, new org.netbeans.lib.awtextra.AbsoluteConstraints(59, 219, 93, 29));
-        add(txtCommunityAdminname, new org.netbeans.lib.awtextra.AbsoluteConstraints(194, 219, 152, 29));
+        add(lblCommunityAdminname, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 230, 93, 29));
 
+        txtCommunityAdminname.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
+        add(txtCommunityAdminname, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 230, 152, 29));
+
+        lblCommunityAdminGender.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
         lblCommunityAdminGender.setForeground(new java.awt.Color(0, 102, 102));
         lblCommunityAdminGender.setText("Gender");
-        add(lblCommunityAdminGender, new org.netbeans.lib.awtextra.AbsoluteConstraints(59, 266, 93, 27));
+        add(lblCommunityAdminGender, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 270, 93, 27));
 
+        lblCommunityAdminHouse.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
         lblCommunityAdminHouse.setForeground(new java.awt.Color(0, 102, 102));
         lblCommunityAdminHouse.setText("House");
-        add(lblCommunityAdminHouse, new org.netbeans.lib.awtextra.AbsoluteConstraints(59, 314, -1, -1));
-        add(txtCommunityAdminhouse, new org.netbeans.lib.awtextra.AbsoluteConstraints(194, 311, 152, -1));
+        add(lblCommunityAdminHouse, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 320, -1, -1));
 
+        txtCommunityAdminhouse.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
+        add(txtCommunityAdminhouse, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 320, 152, -1));
+
+        lblCommunityAdminCity.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
         lblCommunityAdminCity.setForeground(new java.awt.Color(0, 102, 102));
         lblCommunityAdminCity.setText("City");
-        add(lblCommunityAdminCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(59, 361, 58, 25));
-        add(txtCommunityAdminCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(194, 362, 152, -1));
+        add(lblCommunityAdminCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 370, 58, 25));
+
+        txtCommunityAdminCity.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
+        add(txtCommunityAdminCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 370, 152, -1));
 
         btnUpdate.setBackground(new java.awt.Color(0, 0, 0));
         btnUpdate.setForeground(new java.awt.Color(255, 255, 255));
@@ -105,7 +115,7 @@ Person per= new Person();
                 btnUpdateActionPerformed(evt);
             }
         });
-        add(btnUpdate, new org.netbeans.lib.awtextra.AbsoluteConstraints(431, 242, -1, -1));
+        add(btnUpdate, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 180, 140, 50));
 
         btnDelete.setBackground(new java.awt.Color(0, 0, 0));
         btnDelete.setForeground(new java.awt.Color(255, 255, 255));
@@ -115,15 +125,16 @@ Person per= new Person();
                 btnDeleteActionPerformed(evt);
             }
         });
-        add(btnDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(582, 242, -1, -1));
+        add(btnDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 180, 150, 50));
 
+        CombobuttonCommunityAdmin.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
         CombobuttonCommunityAdmin.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Female", "Male" }));
         CombobuttonCommunityAdmin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 CombobuttonCommunityAdminActionPerformed(evt);
             }
         });
-        add(CombobuttonCommunityAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(194, 268, 152, 25));
+        add(CombobuttonCommunityAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 280, 152, 25));
     }// </editor-fold>//GEN-END:initComponents
 
     private void tblCommunityAdminMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tblCommunityAdminMouseClicked

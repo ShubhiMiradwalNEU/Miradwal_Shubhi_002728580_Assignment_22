@@ -69,6 +69,7 @@ public class DoctorListHospitalAdminJPanel extends javax.swing.JPanel {
 
         add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 56, 735, 250));
 
+        jLabel1.setFont(new java.awt.Font("Academy Engraved LET", 1, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 102, 102));
         jLabel1.setText("Add Doctors in Hospital");
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(306, 16, 280, -1));

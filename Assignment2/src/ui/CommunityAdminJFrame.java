@@ -71,7 +71,7 @@ public class CommunityAdminJFrame extends javax.swing.JFrame {
 
         jPanel2.setBackground(new java.awt.Color(153, 255, 255));
 
-        lblTitle.setFont(new java.awt.Font("Centaur", 0, 18)); // NOI18N
+        lblTitle.setFont(new java.awt.Font("Academy Engraved LET", 1, 18)); // NOI18N
         lblTitle.setForeground(new java.awt.Color(0, 102, 102));
         lblTitle.setText("COMMUNITY ADMIN");
 
@@ -82,7 +82,7 @@ public class CommunityAdminJFrame extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(245, 245, 245)
                 .addComponent(lblTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 227, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(243, Short.MAX_VALUE))
+                .addContainerGap(237, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

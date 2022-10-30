@@ -81,32 +81,36 @@ public class ShowHospitalAdminJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(tblHospitalAdmins);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(3, 24, 630, 110));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 900, 160));
 
+        lblName.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
         lblName.setForeground(new java.awt.Color(0, 102, 102));
         lblName.setText("NAME");
-        add(lblName, new org.netbeans.lib.awtextra.AbsoluteConstraints(39, 153, 114, -1));
-        add(txtName, new org.netbeans.lib.awtextra.AbsoluteConstraints(171, 150, 106, -1));
+        add(lblName, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 250, 114, -1));
+        add(txtName, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 250, 106, -1));
 
+        lblGender.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
         lblGender.setForeground(new java.awt.Color(0, 102, 102));
         lblGender.setText("GENDER");
-        add(lblGender, new org.netbeans.lib.awtextra.AbsoluteConstraints(39, 201, 114, -1));
+        add(lblGender, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 300, 114, -1));
 
+        lblHospitalName.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
         lblHospitalName.setForeground(new java.awt.Color(0, 102, 102));
         lblHospitalName.setText("HOSPITAL NAME");
-        add(lblHospitalName, new org.netbeans.lib.awtextra.AbsoluteConstraints(39, 256, 114, -1));
+        add(lblHospitalName, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 350, 130, 20));
 
+        lblCity.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
         lblCity.setForeground(new java.awt.Color(0, 102, 102));
         lblCity.setText("CITY");
-        add(lblCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(39, 312, 114, -1));
-        add(txtCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(172, 309, 106, -1));
+        add(lblCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 410, 114, -1));
+        add(txtCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 400, 106, -1));
 
         txtHospitalName.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtHospitalNameActionPerformed(evt);
             }
         });
-        add(txtHospitalName, new org.netbeans.lib.awtextra.AbsoluteConstraints(171, 250, 106, -1));
+        add(txtHospitalName, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 350, 106, -1));
 
         btnUpdate.setBackground(new java.awt.Color(0, 0, 0));
         btnUpdate.setForeground(new java.awt.Color(255, 255, 255));
@@ -116,7 +120,7 @@ public class ShowHospitalAdminJPanel extends javax.swing.JPanel {
                 btnUpdateActionPerformed(evt);
             }
         });
-        add(btnUpdate, new org.netbeans.lib.awtextra.AbsoluteConstraints(392, 198, -1, -1));
+        add(btnUpdate, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 240, 130, 50));
 
         btnDelete.setBackground(new java.awt.Color(0, 0, 0));
         btnDelete.setForeground(new java.awt.Color(255, 255, 255));
@@ -126,10 +130,10 @@ public class ShowHospitalAdminJPanel extends javax.swing.JPanel {
                 btnDeleteActionPerformed(evt);
             }
         });
-        add(btnDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(532, 198, -1, -1));
+        add(btnDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 240, 110, 50));
 
         comboGender.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Female", "Male" }));
-        add(comboGender, new org.netbeans.lib.awtextra.AbsoluteConstraints(171, 198, 106, -1));
+        add(comboGender, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 300, 106, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void txtHospitalNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtHospitalNameActionPerformed

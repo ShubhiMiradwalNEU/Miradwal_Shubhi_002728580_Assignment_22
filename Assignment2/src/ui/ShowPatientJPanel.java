@@ -81,42 +81,60 @@ public class ShowPatientJPanel extends javax.swing.JPanel {
 
         add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 46, 908, 106));
 
+        lblName.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
         lblName.setText("NAME");
         add(lblName, new org.netbeans.lib.awtextra.AbsoluteConstraints(39, 183, 114, -1));
+
+        txtName.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
         add(txtName, new org.netbeans.lib.awtextra.AbsoluteConstraints(171, 180, 106, -1));
 
+        lblGender.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
         lblGender.setText("GENDER");
         add(lblGender, new org.netbeans.lib.awtextra.AbsoluteConstraints(39, 269, 114, -1));
 
+        comboGender.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
         comboGender.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Female", "Male" }));
         add(comboGender, new org.netbeans.lib.awtextra.AbsoluteConstraints(171, 266, 106, -1));
 
+        lblAge.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
         lblAge.setText("AGE");
         add(lblAge, new org.netbeans.lib.awtextra.AbsoluteConstraints(39, 230, 114, -1));
 
+        lblHouse.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
         lblHouse.setText("HOUSE");
         add(lblHouse, new org.netbeans.lib.awtextra.AbsoluteConstraints(39, 318, 114, -1));
 
+        lblCity.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
         lblCity.setText("CITY");
         add(lblCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(39, 359, 114, -1));
+
+        txtHouse.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
         add(txtHouse, new org.netbeans.lib.awtextra.AbsoluteConstraints(171, 315, 106, -1));
+
+        txtAge.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
         add(txtAge, new org.netbeans.lib.awtextra.AbsoluteConstraints(171, 224, 106, -1));
 
+        btnUpdate.setBackground(new java.awt.Color(0, 0, 0));
+        btnUpdate.setForeground(new java.awt.Color(255, 255, 255));
         btnUpdate.setText("Update");
         btnUpdate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnUpdateActionPerformed(evt);
             }
         });
-        add(btnUpdate, new org.netbeans.lib.awtextra.AbsoluteConstraints(404, 180, -1, -1));
+        add(btnUpdate, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 180, 120, 30));
 
+        btnDelete.setBackground(new java.awt.Color(0, 0, 0));
+        btnDelete.setForeground(new java.awt.Color(255, 255, 255));
         btnDelete.setText("Delete");
         btnDelete.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnDeleteActionPerformed(evt);
             }
         });
-        add(btnDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(525, 180, -1, -1));
+        add(btnDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 180, 130, 30));
+
+        txtCity.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
         add(txtCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(171, 356, 106, -1));
     }// </editor-fold>//GEN-END:initComponents
 

@@ -47,25 +47,29 @@ public class AddPatientJPanel extends javax.swing.JPanel {
         setBackground(new java.awt.Color(204, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        lblHouse.setForeground(new java.awt.Color(0, 102, 102));
+        lblHouse.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
+        lblHouse.setForeground(new java.awt.Color(0, 51, 51));
         lblHouse.setText("HOUSE");
-        add(lblHouse, new org.netbeans.lib.awtextra.AbsoluteConstraints(142, 203, 157, 23));
-        add(txtHouse, new org.netbeans.lib.awtextra.AbsoluteConstraints(305, 203, 157, -1));
+        add(lblHouse, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 220, 157, 23));
+        add(txtHouse, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 220, 157, -1));
 
-        lblCity.setForeground(new java.awt.Color(0, 102, 102));
+        lblCity.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
+        lblCity.setForeground(new java.awt.Color(0, 51, 51));
         lblCity.setText("CITY");
-        add(lblCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(142, 244, 157, 23));
-        add(txtCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(305, 244, 157, -1));
+        add(lblCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 260, 157, 23));
+        add(txtCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 260, 157, -1));
 
-        lblAge.setForeground(new java.awt.Color(0, 102, 102));
+        lblAge.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
+        lblAge.setForeground(new java.awt.Color(0, 51, 51));
         lblAge.setText("AGE");
-        add(lblAge, new org.netbeans.lib.awtextra.AbsoluteConstraints(142, 118, 157, 23));
+        add(lblAge, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 130, 157, 23));
 
-        lblName.setForeground(new java.awt.Color(0, 102, 102));
+        lblName.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
+        lblName.setForeground(new java.awt.Color(0, 51, 51));
         lblName.setText("NAME");
-        add(lblName, new org.netbeans.lib.awtextra.AbsoluteConstraints(142, 77, 157, 23));
-        add(txtAge, new org.netbeans.lib.awtextra.AbsoluteConstraints(305, 118, 157, -1));
-        add(txtName, new org.netbeans.lib.awtextra.AbsoluteConstraints(305, 77, 157, -1));
+        add(lblName, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 90, 157, 23));
+        add(txtAge, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 130, 157, -1));
+        add(txtName, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 90, 157, -1));
 
         btnSave.setBackground(new java.awt.Color(0, 0, 0));
         btnSave.setForeground(new java.awt.Color(255, 255, 255));
@@ -75,14 +79,15 @@ public class AddPatientJPanel extends javax.swing.JPanel {
                 btnSaveActionPerformed(evt);
             }
         });
-        add(btnSave, new org.netbeans.lib.awtextra.AbsoluteConstraints(225, 310, 88, -1));
+        add(btnSave, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 340, 120, 40));
 
-        lblGender.setForeground(new java.awt.Color(0, 102, 102));
+        lblGender.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
+        lblGender.setForeground(new java.awt.Color(0, 51, 51));
         lblGender.setText("GENDER");
-        add(lblGender, new org.netbeans.lib.awtextra.AbsoluteConstraints(142, 159, 157, 23));
+        add(lblGender, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 170, 157, 23));
 
         comboBoxGender.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Female", "Male" }));
-        add(comboBoxGender, new org.netbeans.lib.awtextra.AbsoluteConstraints(305, 159, 157, -1));
+        add(comboBoxGender, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 170, 157, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaveActionPerformed
