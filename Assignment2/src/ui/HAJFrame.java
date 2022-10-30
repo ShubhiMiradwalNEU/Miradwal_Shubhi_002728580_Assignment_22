@@ -10,12 +10,12 @@ import javax.swing.plaf.SplitPaneUI;
  *
  * @author user
  */
-public class HospitalAdminJFrame extends javax.swing.JFrame {
+public class HAJFrame extends javax.swing.JFrame {
 
     /**
      * Creates new form HospitalAdminJFrame
      */
-    public HospitalAdminJFrame() {
+    public HAJFrame() {
         initComponents();
     }
 
@@ -110,7 +110,7 @@ public class HospitalAdminJFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
         MainJFrame mainPage = new MainJFrame();
         mainPage.setVisible(true);
-        HospitalAdminJFrame hospAdmin = new HospitalAdminJFrame();
+        HAJFrame hospAdmin = new HAJFrame();
         hospAdmin.setVisible(false);
     }//GEN-LAST:event_btnBackActionPerformed
 
@@ -131,20 +131,21 @@ public class HospitalAdminJFrame extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(HospitalAdminJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(HAJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(HospitalAdminJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(HAJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(HospitalAdminJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(HAJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(HospitalAdminJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(HAJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new HospitalAdminJFrame().setVisible(true);
+                new HAJFrame().setVisible(true);
             }
         });
     }

@@ -18,11 +18,13 @@ public class DoctorsInHospitalJPanel extends javax.swing.JPanel {
      * Creates new form AddDoctorsJPanel
      */
     Doctor doc = new Doctor();
+    LoginJPanel lp= new LoginJPanel();
     public DoctorsInHospitalJPanel() {
         initComponents();
         populateTable();
         
     }
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -90,6 +92,8 @@ public class DoctorsInHospitalJPanel extends javax.swing.JPanel {
         model.setRowCount(0);
         
         for(Doctor doc: Doctor.getDoctorInHospitalDirectory()){
+            if(doc.getHospitalName().equals(lp.getHospitalName()))
+            {
             Object[] row = new Object[6];
             row[0] = doc;
             row[1] = doc.getGender();
@@ -103,4 +107,5 @@ public class DoctorsInHospitalJPanel extends javax.swing.JPanel {
    
         
     }
+}
 

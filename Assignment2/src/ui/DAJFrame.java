@@ -8,12 +8,12 @@ package ui;
  *
  * @author user
  */
-public class DoctorJFrame extends javax.swing.JFrame {
+public class DAJFrame extends javax.swing.JFrame {
 
     /**
      * Creates new form DoctorJFrame
      */
-    public DoctorJFrame() {
+    public DAJFrame() {
         initComponents();
     }
 
@@ -104,7 +104,7 @@ public class DoctorJFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
        MainJFrame mainpage= new MainJFrame();
        mainpage.setVisible(true);
-       DoctorJFrame  doctor=new DoctorJFrame();
+       DAJFrame  doctor=new DAJFrame();
        doctor.setVisible(true);
     }//GEN-LAST:event_btnBackActionPerformed
 
@@ -125,20 +125,21 @@ public class DoctorJFrame extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(DoctorJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(DAJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(DoctorJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(DAJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(DoctorJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(DAJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(DoctorJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(DAJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new DoctorJFrame().setVisible(true);
+                new DAJFrame().setVisible(true);
             }
         });
     }

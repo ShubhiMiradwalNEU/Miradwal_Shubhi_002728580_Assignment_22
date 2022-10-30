@@ -29,6 +29,15 @@ public class LoginJPanel extends javax.swing.JPanel {
        public static int paAge;
        public static String docName;
        public static String pacommunity;
+        public static String hospitalName;
+
+    public static String getHospitalName() {
+        return hospitalName;
+    }
+
+    public static void setHospitalName(String hospitalName) {
+        LoginJPanel.hospitalName = hospitalName;
+    }
 
     public static String getPacommunity() {
         return pacommunity;
@@ -145,7 +154,7 @@ public class LoginJPanel extends javax.swing.JPanel {
                 
                 if(person.getUserType().equals("system admin")){
                     
-                    SystemAdminJFrame systemAdmin = new SystemAdminJFrame();
+                    SAJFrame systemAdmin = new SAJFrame();
                     systemAdmin.setVisible(true);
                     
                 }
@@ -153,23 +162,24 @@ public class LoginJPanel extends javax.swing.JPanel {
                     LoginJPanel.setCacity(person.getCity());
                  
                    
-                    CommunityAdminJFrame communityAdmin = new CommunityAdminJFrame();
+                    CAJFrame communityAdmin = new CAJFrame();
                     communityAdmin.setVisible(true);
                 }
                 else if(person.getUserType().equals("hospital admin")){
-                    HospitalAdminJFrame hospAdmin = new HospitalAdminJFrame();
+                    HAJFrame hospAdmin = new HAJFrame();
                     hospAdmin.setVisible(true); 
                 }
                 else if(person.getUserType().equals("doctor")){
-                    DoctorJFrame doctor = new DoctorJFrame();
+                    DAJFrame doctor = new DAJFrame();
                     doctor.setVisible(true);
                     LoginJPanel.setDocName(person.getName());
+                    LoginJPanel.setHospitalName(person.getHospitalName());
                  
                     
                 }
                 else if(person.getUserType().equals("patient")){
                     //LoginJPanel.setPacity(person.getCity());
-                    PatientJFrame patient = new PatientJFrame();
+                    PAJFrame patient = new PAJFrame();
                       LoginJPanel.setPaname(person.getName());
                     LoginJPanel.setPaAge(person.getAge());
                     LoginJPanel.setPacity(person.getCity());
@@ -189,17 +199,17 @@ public class LoginJPanel extends javax.swing.JPanel {
         
 //        if (username.equals("hospitalAdmin") && password.equals("1234")){
 //            System.out.println("== Username and Password Matches ==");
-//            HospitalAdminJFrame hospAdmin = new HospitalAdminJFrame();
+//            HAJFrame hospAdmin = new HAJFrame();
 //            hospAdmin.setVisible(true);
 //        }
 //        else if (username.equals("communityAdmin") && password.equals("12345")){
 //            System.out.println("== Username and Password Matches ==");
-//            CommunityAdminJFrame communityAdmin = new CommunityAdminJFrame();
+//            CAJFrame communityAdmin = new CAJFrame();
 //            communityAdmin.setVisible(true);
 //        }
 //        else if (username.equals("systemAdmin") && password.equals("123456")){
 //            System.out.println("== Username and Password Matches ==");
-//            SystemAdminJFrame systemAdmin = new SystemAdminJFrame();
+//            SAJFrame systemAdmin = new SAJFrame();
 //            systemAdmin.setVisible(true);
 //        }
 

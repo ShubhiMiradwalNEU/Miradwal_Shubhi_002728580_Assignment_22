@@ -9,10 +9,10 @@ package ui;
  *
  * @author user
  */
-public class CommunityAdminJFrame extends javax.swing.JFrame {
+public class CAJFrame extends javax.swing.JFrame {
 
     /** Creates new form CommunityAdminJFrame */
-    public CommunityAdminJFrame() {
+    public CAJFrame() {
         initComponents();
     }
 
@@ -115,7 +115,7 @@ public class CommunityAdminJFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
         MainJFrame mainPage = new MainJFrame();
         mainPage.setVisible(true);
-        CommunityAdminJFrame commAdmin = new CommunityAdminJFrame();
+        CAJFrame commAdmin = new CAJFrame();
         commAdmin.setVisible(false);
     }//GEN-LAST:event_btnBackActionPerformed
 
@@ -136,20 +136,21 @@ public class CommunityAdminJFrame extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(CommunityAdminJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CAJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(CommunityAdminJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CAJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(CommunityAdminJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CAJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(CommunityAdminJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CAJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new CommunityAdminJFrame().setVisible(true);
+                new CAJFrame().setVisible(true);
             }
         });
     }
