@@ -14,14 +14,14 @@ import model.Person;
  *
  * @author user
  */
-public class AddPatientJPanel extends javax.swing.JPanel {
+public class AddPAJPanel extends javax.swing.JPanel {
 
     /**
-     * Creates new form AddPatientJPanel
+     * Creates new form AddPAJPanel
      */
     Person person = new Person();
     Patient patient = new Patient();
-    public AddPatientJPanel() {
+    public AddPAJPanel() {
         initComponents();
          populateTable();
     }

@@ -7,6 +7,7 @@ package ui;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import model.Doctor;
+import static model.Doctor.doctorInHospitalDirectory;
 
 /**
  *
@@ -38,6 +39,7 @@ public class DoctorsInHospitalJPanel extends javax.swing.JPanel {
         jScrollPane2 = new javax.swing.JScrollPane();
         tblAddDoctors = new javax.swing.JTable();
         jLabel1 = new javax.swing.JLabel();
+        deletedocbtn = new javax.swing.JButton();
 
         setBackground(new java.awt.Color(204, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -74,14 +76,43 @@ public class DoctorsInHospitalJPanel extends javax.swing.JPanel {
         jLabel1.setForeground(new java.awt.Color(0, 102, 102));
         jLabel1.setText("DOCTOR IN HOSPITAL");
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 10, 230, 30));
+
+        deletedocbtn.setBackground(new java.awt.Color(0, 0, 0));
+        deletedocbtn.setForeground(new java.awt.Color(255, 255, 255));
+        deletedocbtn.setText("Delete");
+        deletedocbtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                deletedocbtnActionPerformed(evt);
+            }
+        });
+        add(deletedocbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 450, 100, 30));
     }// </editor-fold>//GEN-END:initComponents
 
     private void tblAddDoctorsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tblAddDoctorsMouseClicked
         // TODO add your handling code here:
     }//GEN-LAST:event_tblAddDoctorsMouseClicked
+
+    private void deletedocbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deletedocbtnActionPerformed
+        // TODO add your handling code here:
+        //deletedocbtn
+                 // TODO add your handling code here:
+        int selectedRowIndex = tblAddDoctors.getSelectedRow();
+        if (selectedRowIndex < 0){
+            JOptionPane.showMessageDialog(this,"please select a row");
+            return;
+        }
+        DefaultTableModel model = (DefaultTableModel) tblAddDoctors.getModel();
+        Doctor selectedDoctor = (Doctor) model.getValueAt(selectedRowIndex, 0);
+
+        doctorInHospitalDirectory.remove(selectedDoctor);
+        JOptionPane.showMessageDialog(this,"doctor deleted from the Hospital...");
+
+        populateTable();
+    }//GEN-LAST:event_deletedocbtnActionPerformed
     
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton deletedocbtn;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTable tblAddDoctors;

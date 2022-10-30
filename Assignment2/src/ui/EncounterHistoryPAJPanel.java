@@ -12,13 +12,13 @@ import model.VitalSigns;
  *
  * @author shubhimiradwal
  */
-public class EncounterHistoryPatientJPanel extends javax.swing.JPanel {
+public class EncounterHistoryPAJPanel extends javax.swing.JPanel {
         
     LoginJPanel lp= new LoginJPanel();
     /**
      * Creates new form EncounterHistoryPatientJPanel
      */
-    public EncounterHistoryPatientJPanel() {
+    public EncounterHistoryPAJPanel() {
         initComponents();
         populateTable();
     }

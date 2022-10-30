@@ -179,13 +179,13 @@ public class SAJFrame extends javax.swing.JFrame {
 
     private void btnAddDoctorsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddDoctorsActionPerformed
         // TODO add your handling code here:
-        AddDoctorJPanel createDoctors = new AddDoctorJPanel();
+        AddDAJPanel createDoctors = new AddDAJPanel();
         splitPane.setRightComponent(createDoctors);
     }//GEN-LAST:event_btnAddDoctorsActionPerformed
 
     private void btnViewDoctorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnViewDoctorActionPerformed
         // TODO add your handling code here:
-        ShowDoctorJPanel viewDoctor = new ShowDoctorJPanel();
+        ShowDAJPanel viewDoctor = new ShowDAJPanel();
         splitPane.setRightComponent(viewDoctor);
     }//GEN-LAST:event_btnViewDoctorActionPerformed
 
@@ -199,37 +199,37 @@ public class SAJFrame extends javax.swing.JFrame {
 
     private void btnAddHospitalAdminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddHospitalAdminActionPerformed
         // TODO add your handling code here:
-        AddHospitalAdminJPanel createHospitalAdmin = new AddHospitalAdminJPanel();
+        AddHAJPanel createHospitalAdmin = new AddHAJPanel();
         splitPane.setRightComponent(createHospitalAdmin);
     }//GEN-LAST:event_btnAddHospitalAdminActionPerformed
 
     private void btnViewHospitalAdminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnViewHospitalAdminActionPerformed
         // TODO add your handling code here:
-        ShowHospitalAdminJPanel viewHospitalAdmin = new ShowHospitalAdminJPanel();
+        ShowHAJPanel viewHospitalAdmin = new ShowHAJPanel();
         splitPane.setRightComponent(viewHospitalAdmin);
     }//GEN-LAST:event_btnViewHospitalAdminActionPerformed
 
     private void btnAddCommunityAdminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddCommunityAdminActionPerformed
         // TODO add your handling code here:
-        AddCommunityAdminJPanel createCommuntiyAdmin = new AddCommunityAdminJPanel();
+        AddCAJPanel createCommuntiyAdmin = new AddCAJPanel();
         splitPane.setRightComponent(createCommuntiyAdmin);
     }//GEN-LAST:event_btnAddCommunityAdminActionPerformed
 
     private void btnAddPatientActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddPatientActionPerformed
         // TODO add your handling code here:
-        AddPatientJPanel createPatient = new AddPatientJPanel();
+        AddPAJPanel createPatient = new AddPAJPanel();
         splitPane.setRightComponent(createPatient);
     }//GEN-LAST:event_btnAddPatientActionPerformed
 
     private void btnViewCommunityAdminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnViewCommunityAdminActionPerformed
         // TODO add your handling code here:
-         ShowCommunityAdminJPanel viewCommunityAdmin = new ShowCommunityAdminJPanel();
+         ShowCAJPanel viewCommunityAdmin = new ShowCAJPanel();
         splitPane.setRightComponent(viewCommunityAdmin);
     }//GEN-LAST:event_btnViewCommunityAdminActionPerformed
 
     private void btnViewPatientActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnViewPatientActionPerformed
         // TODO add your handling code here:
-        ShowPatientJPanel viewPatient = new ShowPatientJPanel();
+        ShowPAJPanel viewPatient = new ShowPAJPanel();
         splitPane.setRightComponent(viewPatient);
     }//GEN-LAST:event_btnViewPatientActionPerformed
 

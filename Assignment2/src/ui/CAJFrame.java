@@ -101,13 +101,13 @@ public class CAJFrame extends javax.swing.JFrame {
 
     private void btnCreateHospitalAdminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCreateHospitalAdminActionPerformed
         // TODO add your handling code here:
-        AddHospitalAdminJPanel hospitaladmin = new AddHospitalAdminJPanel();
+        AddHAJPanel hospitaladmin = new AddHAJPanel();
         splitPane.setRightComponent(hospitaladmin);
     }//GEN-LAST:event_btnCreateHospitalAdminActionPerformed
 
     private void btnViewHospitalAdminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnViewHospitalAdminActionPerformed
         // TODO add your handling code here:
-        ShowHospitalAdminJPanel viewhospitaladmin = new ShowHospitalAdminJPanel();
+        ShowHAJPanel viewhospitaladmin = new ShowHAJPanel();
         splitPane.setRightComponent(viewhospitaladmin);
     }//GEN-LAST:event_btnViewHospitalAdminActionPerformed
 

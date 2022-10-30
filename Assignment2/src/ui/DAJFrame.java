@@ -29,7 +29,6 @@ public class DAJFrame extends javax.swing.JFrame {
         splitPane = new javax.swing.JSplitPane();
         jPanel1 = new javax.swing.JPanel();
         btnViewPatients = new javax.swing.JButton();
-        btnProfile = new javax.swing.JButton();
         btnBack = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
 
@@ -48,11 +47,6 @@ public class DAJFrame extends javax.swing.JFrame {
         });
         jPanel1.add(btnViewPatients, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 25, -1, -1));
 
-        btnProfile.setBackground(new java.awt.Color(0, 0, 0));
-        btnProfile.setForeground(new java.awt.Color(255, 255, 255));
-        btnProfile.setText("Profile");
-        jPanel1.add(btnProfile, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 78, 109, -1));
-
         btnBack.setBackground(new java.awt.Color(0, 0, 0));
         btnBack.setForeground(new java.awt.Color(255, 255, 255));
         btnBack.setText("Back");
@@ -61,7 +55,7 @@ public class DAJFrame extends javax.swing.JFrame {
                 btnBackActionPerformed(evt);
             }
         });
-        jPanel1.add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 131, 109, -1));
+        jPanel1.add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 360, 60, 20));
 
         splitPane.setLeftComponent(jPanel1);
 
@@ -71,11 +65,11 @@ public class DAJFrame extends javax.swing.JFrame {
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 559, Short.MAX_VALUE)
+            .addGap(0, 880, Short.MAX_VALUE)
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 392, Short.MAX_VALUE)
+            .addGap(0, 650, Short.MAX_VALUE)
         );
 
         splitPane.setRightComponent(jPanel2);
@@ -84,7 +78,7 @@ public class DAJFrame extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(splitPane)
+            .addComponent(splitPane, javax.swing.GroupLayout.Alignment.TRAILING)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -146,7 +140,6 @@ public class DAJFrame extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnBack;
-    private javax.swing.JButton btnProfile;
     private javax.swing.JButton btnViewPatients;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;

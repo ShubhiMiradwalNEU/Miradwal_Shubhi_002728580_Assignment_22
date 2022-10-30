@@ -16,12 +16,12 @@ import model.Person;
  *
  * @author user
  */
-public class ShowCommunityAdminJPanel extends javax.swing.JPanel {
+public class ShowCAJPanel extends javax.swing.JPanel {
 
     /**
      * Creates new form ViewCommunityAdminJPanel
      */
-    public ShowCommunityAdminJPanel() {
+    public ShowCAJPanel() {
         initComponents();
         populateTable();
         populatecommunity();

@@ -16,14 +16,14 @@ import model.HospitalAdmin;
  *
  * @author user
  */
-public class ShowHospitalAdminJPanel extends javax.swing.JPanel {
+public class ShowHAJPanel extends javax.swing.JPanel {
 
     /**
-     * Creates new form ShowHospitalAdminJPanel
+     * Creates new form ShowHAJPanel
      */
     HospitalAdmin ha = new HospitalAdmin();
    
-    public ShowHospitalAdminJPanel() {
+    public ShowHAJPanel() {
         initComponents();
        
         populateTable();

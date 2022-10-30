@@ -14,13 +14,13 @@ import model.Person;
  *
  * @author user
  */
-public class AddCommunityAdminJPanel extends javax.swing.JPanel {
+public class AddCAJPanel extends javax.swing.JPanel {
 
     /**
-     * Creates new form AddCommunityAdminJPanel
+     * Creates new form AddCAJPanel
      */
     Person person = new Person();
-    public AddCommunityAdminJPanel() {
+    public AddCAJPanel() {
         initComponents();
         //populateTable();
     }

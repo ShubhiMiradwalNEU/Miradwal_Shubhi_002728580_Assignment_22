@@ -133,7 +133,7 @@ public class PAJFrame extends javax.swing.JFrame {
 
     private void btnEncounterHistoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEncounterHistoryActionPerformed
         // TODO add your handling code here:'
-        EncounterHistoryPatientJPanel profile = new EncounterHistoryPatientJPanel();
+        EncounterHistoryPAJPanel profile = new EncounterHistoryPAJPanel();
         splitPane.setRightComponent(profile);
         
     }//GEN-LAST:event_btnEncounterHistoryActionPerformed

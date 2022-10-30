@@ -16,15 +16,15 @@ import static model.Person.personDirectory;
  *
  * @author user
  */
-public class AddHospitalAdminJPanel extends javax.swing.JPanel {
+public class AddHAJPanel extends javax.swing.JPanel {
 
     /**
-     * Creates new form AddHospitalAdminJPanel
+     * Creates new form AddHAJPanel
      */
     Person person = new Person();
     HospitalAdmin hospitalAdmin = new HospitalAdmin();
       LoginJPanel lp= new LoginJPanel();
-    public AddHospitalAdminJPanel() {
+    public AddHAJPanel() {
         initComponents();
         populateTable();
         
