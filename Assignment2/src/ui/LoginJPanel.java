@@ -25,7 +25,24 @@ public class LoginJPanel extends javax.swing.JPanel {
 
        public static  String cacity;
        public static String pacity;
+       public static String paname;
+       public static int paAge;
 
+    public static String getPaname() {
+        return paname;
+    }
+
+    public static void setPaname(String paname) {
+        LoginJPanel.paname = paname;
+    }
+
+    public static int getPaAge() {
+        return paAge;
+    }
+
+    public static void setPaAge(int paAge) {
+        LoginJPanel.paAge = paAge;
+    }
     public static String getPacity() {
         return pacity;
     }
@@ -134,6 +151,7 @@ public class LoginJPanel extends javax.swing.JPanel {
                 }
                 else if(person.getUserType().equals("community admin")){
                     LoginJPanel.setCacity(person.getCity());
+                 
                    
                     CommunityAdminJFrame communityAdmin = new CommunityAdminJFrame();
                     communityAdmin.setVisible(true);
@@ -145,11 +163,17 @@ public class LoginJPanel extends javax.swing.JPanel {
                 else if(person.getUserType().equals("doctor")){
                     DoctorJFrame doctor = new DoctorJFrame();
                     doctor.setVisible(true);
+                    LoginJPanel.setPaname(person.getName());
+                    LoginJPanel.setPaAge(person.getAge());
+                    LoginJPanel.setPacity(person.getCity());
+                    
                 }
                 else if(person.getUserType().equals("patient")){
                     LoginJPanel.setPacity(person.getCity());
                     PatientJFrame patient = new PatientJFrame();
-                    
+                      LoginJPanel.setPaname(person.getName());
+                    LoginJPanel.setPaAge(person.getAge());
+                    LoginJPanel.setPacity(person.getCity());
                     patient.setVisible(true);
                     
                     

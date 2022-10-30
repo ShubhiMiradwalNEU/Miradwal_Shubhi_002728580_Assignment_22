@@ -26,7 +26,7 @@ public class DoctorJFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jSplitPane1 = new javax.swing.JSplitPane();
+        splitPane = new javax.swing.JSplitPane();
         jPanel1 = new javax.swing.JPanel();
         btnViewPatients = new javax.swing.JButton();
         btnProfile = new javax.swing.JButton();
@@ -36,6 +36,11 @@ public class DoctorJFrame extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         btnViewPatients.setText("View Patients");
+        btnViewPatients.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnViewPatientsActionPerformed(evt);
+            }
+        });
 
         btnProfile.setText("Profile");
 
@@ -65,7 +70,7 @@ public class DoctorJFrame extends javax.swing.JFrame {
                 .addContainerGap(204, Short.MAX_VALUE))
         );
 
-        jSplitPane1.setLeftComponent(jPanel1);
+        splitPane.setLeftComponent(jPanel1);
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -78,21 +83,27 @@ public class DoctorJFrame extends javax.swing.JFrame {
             .addGap(0, 355, Short.MAX_VALUE)
         );
 
-        jSplitPane1.setRightComponent(jPanel2);
+        splitPane.setRightComponent(jPanel2);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jSplitPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 635, Short.MAX_VALUE)
+            .addComponent(splitPane, javax.swing.GroupLayout.DEFAULT_SIZE, 635, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jSplitPane1)
+            .addComponent(splitPane)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnViewPatientsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnViewPatientsActionPerformed
+        // TODO add your handling code here:
+        ShowAppointmentDoctor showAppointment = new ShowAppointmentDoctor();
+        splitPane.setRightComponent(showAppointment);
+    }//GEN-LAST:event_btnViewPatientsActionPerformed
 
     /**
      * @param args the command line arguments
@@ -135,6 +146,6 @@ public class DoctorJFrame extends javax.swing.JFrame {
     private javax.swing.JButton btnViewPatients;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JSplitPane jSplitPane1;
+    private javax.swing.JSplitPane splitPane;
     // End of variables declaration//GEN-END:variables
 }

@@ -7,6 +7,8 @@ package ui;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import model.Doctor;
+import model.PatientAppointment;
+import static model.PatientAppointment.appointment;
 import model.Person;
 
 /**
@@ -20,6 +22,7 @@ public class DoctorListPatientJPanel extends javax.swing.JPanel {
      */
     Person person = new Person();
     Doctor doc = new Doctor();
+    PatientAppointment pa= new PatientAppointment();
     LoginJPanel lp= new LoginJPanel();
     public DoctorListPatientJPanel() {
         initComponents();
@@ -121,6 +124,11 @@ public class DoctorListPatientJPanel extends javax.swing.JPanel {
         System.out.println("Doctor List Patient JPanel   "+selectedDoctor);
              
         doc.patientAddDoctors(selectedDoctor.getName(), selectedDoctor.getGender(), selectedDoctor.getPhysicianType(), selectedDoctor.getHouse(), selectedDoctor.getCity(), selectedDoctor.getHospitalName());
+        pa.appointment.add(new PatientAppointment(lp.getPaname(),selectedDoctor.getName(),lp.getPacity(),lp.getPaAge()));
+        for(PatientAppointment temp:appointment)
+        {
+            System.out.println(temp.getAge()+temp.getCity()+temp.getDoctorName()+temp.getAge());
+        }
         JOptionPane.showMessageDialog(this, "Appointment booked for this doctor");
         
     }//GEN-LAST:event_tblDoctorMouseClicked
