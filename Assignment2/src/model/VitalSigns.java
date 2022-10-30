@@ -13,6 +13,8 @@ import static model.Patient.patientDirectory;
  * @author user
  */
 public class VitalSigns {
+    String doctorName;
+    String PatientName;
     Double temperature;
     Double bloodPressure;
     String description;
@@ -22,12 +24,31 @@ public class VitalSigns {
         
     }
 
-    public VitalSigns(Double temperature, Double bloodPressure, String description) {
+    public VitalSigns(String doctorName, String PatientName, Double temperature, Double bloodPressure, String description) {
+        this.doctorName = doctorName;
+        this.PatientName = PatientName;
         this.temperature = temperature;
         this.bloodPressure = bloodPressure;
-        this.description=description;
-        
+        this.description = description;
     }
+
+    public String getDoctorName() {
+        return doctorName;
+    }
+
+    public void setDoctorName(String doctorName) {
+        this.doctorName = doctorName;
+    }
+
+    public String getPatientName() {
+        return PatientName;
+    }
+
+    public void setPatientName(String PatientName) {
+        this.PatientName = PatientName;
+    }
+
+ 
 
     @Override
     public String toString() {
@@ -67,9 +88,9 @@ public class VitalSigns {
     }
     
 
-    public void  addNewVitalSigns(Double temperature, Double bloodPressure, String description) 
+    public void  addNewVitalSigns(String doctorName,String PatientName,Double temperature, Double bloodPressure, String description) 
     {
-        vitalSigns.add(new VitalSigns(temperature,bloodPressure,description));
+        vitalSigns.add(new VitalSigns(doctorName,PatientName,temperature,bloodPressure,description));
         System.out.println("Vital Signs for Patient Added Successfully !!");
            }
     

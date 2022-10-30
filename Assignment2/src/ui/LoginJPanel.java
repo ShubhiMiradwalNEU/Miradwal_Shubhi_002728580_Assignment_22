@@ -27,6 +27,15 @@ public class LoginJPanel extends javax.swing.JPanel {
        public static String pacity;
        public static String paname;
        public static int paAge;
+       public static String docName;
+
+    public static String getDocName() {
+        return docName;
+    }
+
+    public static void setDocName(String docName) {
+        LoginJPanel.docName = docName;
+    }
 
     public static String getPaname() {
         return paname;
@@ -163,9 +172,8 @@ public class LoginJPanel extends javax.swing.JPanel {
                 else if(person.getUserType().equals("doctor")){
                     DoctorJFrame doctor = new DoctorJFrame();
                     doctor.setVisible(true);
-                    LoginJPanel.setPaname(person.getName());
-                    LoginJPanel.setPaAge(person.getAge());
-                    LoginJPanel.setPacity(person.getCity());
+                    LoginJPanel.setDocName(person.getName());
+                 
                     
                 }
                 else if(person.getUserType().equals("patient")){

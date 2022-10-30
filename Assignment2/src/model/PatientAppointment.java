@@ -26,14 +26,13 @@ public class PatientAppointment {
     public static void setAppointment(List<PatientAppointment> appointment) {
         PatientAppointment.appointment = appointment;
     }
+     public PatientAppointment() {
+    }
     public PatientAppointment(String name, String doctorName, String city, int age) {
         this.name = name;
         this.doctorName = doctorName;
         this.city = city;
         this.age = age;
-    }
-
-    public PatientAppointment() {
     }
 
     public String getName() {
@@ -70,9 +69,8 @@ public class PatientAppointment {
 
     @Override
     public String toString() {
-        return name;
-                
-                }
+        return name;         
+      }
     
     
     
