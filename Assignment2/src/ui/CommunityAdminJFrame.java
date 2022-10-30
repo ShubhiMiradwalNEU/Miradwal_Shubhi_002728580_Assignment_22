@@ -29,28 +29,35 @@ public class CommunityAdminJFrame extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         btnCreateHospitalAdmin = new javax.swing.JButton();
         btnViewHospitalAdmin = new javax.swing.JButton();
-        btnProfile = new javax.swing.JButton();
         btnBack = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         lblTitle = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jPanel1.setBackground(new java.awt.Color(153, 255, 255));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        btnCreateHospitalAdmin.setBackground(new java.awt.Color(0, 0, 0));
+        btnCreateHospitalAdmin.setForeground(new java.awt.Color(255, 255, 255));
         btnCreateHospitalAdmin.setText("Create Hospital Admin");
         btnCreateHospitalAdmin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCreateHospitalAdminActionPerformed(evt);
             }
         });
+        jPanel1.add(btnCreateHospitalAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 130, -1, -1));
 
+        btnViewHospitalAdmin.setBackground(new java.awt.Color(0, 0, 0));
+        btnViewHospitalAdmin.setForeground(new java.awt.Color(255, 255, 255));
         btnViewHospitalAdmin.setText("View Hospital Admins");
         btnViewHospitalAdmin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnViewHospitalAdminActionPerformed(evt);
             }
         });
-
-        btnProfile.setText("Profile");
+        jPanel1.add(btnViewHospitalAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 210, -1, -1));
 
         btnBack.setText("Back");
         btnBack.addActionListener(new java.awt.event.ActionListener() {
@@ -58,74 +65,36 @@ public class CommunityAdminJFrame extends javax.swing.JFrame {
                 btnBackActionPerformed(evt);
             }
         });
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnCreateHospitalAdmin)
-                    .addComponent(btnViewHospitalAdmin)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(9, 9, 9)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnProfile)
-                            .addComponent(btnBack))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(29, 29, 29)
-                .addComponent(btnCreateHospitalAdmin)
-                .addGap(33, 33, 33)
-                .addComponent(btnViewHospitalAdmin)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 267, Short.MAX_VALUE)
-                .addComponent(btnProfile)
-                .addGap(51, 51, 51)
-                .addComponent(btnBack)
-                .addGap(32, 32, 32))
-        );
+        jPanel1.add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(15, 445, -1, -1));
 
         splitPane.setLeftComponent(jPanel1);
 
+        jPanel2.setBackground(new java.awt.Color(153, 255, 255));
+
         lblTitle.setFont(new java.awt.Font("Centaur", 0, 18)); // NOI18N
-        lblTitle.setText("Community Admin ");
+        lblTitle.setForeground(new java.awt.Color(0, 102, 102));
+        lblTitle.setText("COMMUNITY ADMIN");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(47, 47, 47)
-                .addComponent(lblTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 334, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(340, Short.MAX_VALUE))
+                .addGap(245, 245, 245)
+                .addComponent(lblTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 227, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(243, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(18, 18, 18)
+                .addGap(21, 21, 21)
                 .addComponent(lblTitle)
-                .addContainerGap(460, Short.MAX_VALUE))
+                .addContainerGap(457, Short.MAX_VALUE))
         );
 
         splitPane.setRightComponent(jPanel2);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(splitPane)
-                .addContainerGap())
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(splitPane, javax.swing.GroupLayout.DEFAULT_SIZE, 500, Short.MAX_VALUE)
-        );
+        getContentPane().add(splitPane, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 0, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -188,7 +157,6 @@ public class CommunityAdminJFrame extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnBack;
     private javax.swing.JButton btnCreateHospitalAdmin;
-    private javax.swing.JButton btnProfile;
     private javax.swing.JButton btnViewHospitalAdmin;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;

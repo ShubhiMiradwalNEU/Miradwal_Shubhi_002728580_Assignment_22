@@ -38,125 +38,127 @@ public class SystemAdminJFrame extends javax.swing.JFrame {
         btnAddCommunityAdmin = new javax.swing.JButton();
         btnViewCommunityAdmin = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        splitPane.setForeground(new java.awt.Color(204, 204, 204));
+
+        jPanel1.setBackground(new java.awt.Color(153, 255, 255));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        btnAddDoctors.setBackground(new java.awt.Color(0, 0, 0));
+        btnAddDoctors.setForeground(new java.awt.Color(255, 255, 255));
         btnAddDoctors.setText("Add Doctors");
         btnAddDoctors.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAddDoctorsActionPerformed(evt);
             }
         });
+        jPanel1.add(btnAddDoctors, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 78, 165, 29));
 
+        btnViewDoctor.setBackground(new java.awt.Color(0, 0, 0));
+        btnViewDoctor.setForeground(new java.awt.Color(255, 255, 255));
         btnViewDoctor.setText("View Doctors");
         btnViewDoctor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnViewDoctorActionPerformed(evt);
             }
         });
+        jPanel1.add(btnViewDoctor, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 145, 165, -1));
 
+        btnBack.setBackground(new java.awt.Color(0, 0, 0));
+        btnBack.setForeground(new java.awt.Color(255, 255, 255));
         btnBack.setText("Back");
         btnBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnBackActionPerformed(evt);
             }
         });
+        jPanel1.add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 640, -1, -1));
 
+        btnAddPatient.setBackground(new java.awt.Color(0, 0, 0));
+        btnAddPatient.setForeground(new java.awt.Color(255, 255, 255));
         btnAddPatient.setText("Add Patients");
         btnAddPatient.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAddPatientActionPerformed(evt);
             }
         });
+        jPanel1.add(btnAddPatient, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 203, 169, -1));
 
+        btnViewPatient.setBackground(new java.awt.Color(0, 0, 0));
+        btnViewPatient.setForeground(new java.awt.Color(255, 255, 255));
         btnViewPatient.setText("View Patients");
         btnViewPatient.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnViewPatientActionPerformed(evt);
             }
         });
+        jPanel1.add(btnViewPatient, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 262, 169, -1));
 
+        btnAddHospitalAdmin.setBackground(new java.awt.Color(0, 0, 0));
+        btnAddHospitalAdmin.setForeground(new java.awt.Color(255, 255, 255));
         btnAddHospitalAdmin.setText("Add Hospital Admin");
         btnAddHospitalAdmin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAddHospitalAdminActionPerformed(evt);
             }
         });
+        jPanel1.add(btnAddHospitalAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 324, 169, -1));
 
+        btnViewHospitalAdmin.setBackground(new java.awt.Color(0, 0, 0));
+        btnViewHospitalAdmin.setForeground(new java.awt.Color(255, 255, 255));
         btnViewHospitalAdmin.setText("View Hospital Admin");
         btnViewHospitalAdmin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnViewHospitalAdminActionPerformed(evt);
             }
         });
+        jPanel1.add(btnViewHospitalAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 384, 169, -1));
 
+        btnAddCommunityAdmin.setBackground(new java.awt.Color(0, 0, 0));
+        btnAddCommunityAdmin.setForeground(new java.awt.Color(255, 255, 255));
         btnAddCommunityAdmin.setText("Add Community Admin");
         btnAddCommunityAdmin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAddCommunityAdminActionPerformed(evt);
             }
         });
+        jPanel1.add(btnAddCommunityAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 452, 169, -1));
 
+        btnViewCommunityAdmin.setBackground(new java.awt.Color(0, 0, 0));
+        btnViewCommunityAdmin.setForeground(new java.awt.Color(255, 255, 255));
         btnViewCommunityAdmin.setText("View Community Admin");
         btnViewCommunityAdmin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnViewCommunityAdminActionPerformed(evt);
             }
         });
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnViewDoctor)
-                    .addComponent(btnBack)
-                    .addComponent(btnAddPatient)
-                    .addComponent(btnViewPatient)
-                    .addComponent(btnAddHospitalAdmin)
-                    .addComponent(btnAddDoctors)
-                    .addComponent(btnViewHospitalAdmin)
-                    .addComponent(btnAddCommunityAdmin)
-                    .addComponent(btnViewCommunityAdmin))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(46, 46, 46)
-                .addComponent(btnAddDoctors)
-                .addGap(18, 18, 18)
-                .addComponent(btnViewDoctor)
-                .addGap(18, 18, 18)
-                .addComponent(btnAddPatient)
-                .addGap(18, 18, 18)
-                .addComponent(btnViewPatient)
-                .addGap(18, 18, 18)
-                .addComponent(btnAddHospitalAdmin)
-                .addGap(29, 29, 29)
-                .addComponent(btnViewHospitalAdmin)
-                .addGap(33, 33, 33)
-                .addComponent(btnAddCommunityAdmin)
-                .addGap(33, 33, 33)
-                .addComponent(btnViewCommunityAdmin)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 58, Short.MAX_VALUE)
-                .addComponent(btnBack)
-                .addGap(31, 31, 31))
-        );
+        jPanel1.add(btnViewCommunityAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 520, -1, -1));
 
         splitPane.setLeftComponent(jPanel1);
+
+        jPanel2.setBackground(new java.awt.Color(204, 255, 255));
+
+        jLabel1.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
+        jLabel1.setText("System Admin Dashboard");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 745, Short.MAX_VALUE)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(268, 268, 268)
+                .addComponent(jLabel1)
+                .addContainerGap(324, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 500, Short.MAX_VALUE)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(24, 24, 24)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(950, Short.MAX_VALUE))
         );
 
         splitPane.setRightComponent(jPanel2);
@@ -276,6 +278,7 @@ public class SystemAdminJFrame extends javax.swing.JFrame {
     private javax.swing.JButton btnViewDoctor;
     private javax.swing.JButton btnViewHospitalAdmin;
     private javax.swing.JButton btnViewPatient;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JSplitPane splitPane;

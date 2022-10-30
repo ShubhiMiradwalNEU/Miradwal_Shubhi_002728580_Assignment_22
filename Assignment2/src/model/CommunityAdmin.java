@@ -89,5 +89,6 @@ public class CommunityAdmin {
     public void deleteCommunityAdmin(CommunityAdmin ca) {
         communityAdminDirectory.remove(ca);
     }
+    
 }
     

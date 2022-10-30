@@ -25,7 +25,7 @@ public class HospitalAdmin {
         this.name = name;
         this.gender = gender;
         this.hospitalName = hospitalName;
-        this.city = city;
+        this.city = city;       
     }
 
     @Override

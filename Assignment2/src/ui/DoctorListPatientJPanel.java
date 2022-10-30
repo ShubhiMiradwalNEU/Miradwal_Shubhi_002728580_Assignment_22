@@ -43,6 +43,9 @@ public class DoctorListPatientJPanel extends javax.swing.JPanel {
         jLabel1 = new javax.swing.JLabel();
         btnBookDoctor = new javax.swing.JButton();
 
+        setBackground(new java.awt.Color(204, 255, 255));
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
         tblDoctor.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null},
@@ -69,46 +72,21 @@ public class DoctorListPatientJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(tblDoctor);
 
-        jLabel1.setText("Book Doctor Appointment");
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 43, 735, 199));
 
+        jLabel1.setBackground(new java.awt.Color(0, 102, 102));
+        jLabel1.setText("Book Doctor Appointment");
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(283, 8, 168, -1));
+
+        btnBookDoctor.setBackground(new java.awt.Color(0, 0, 0));
+        btnBookDoctor.setForeground(new java.awt.Color(255, 255, 255));
         btnBookDoctor.setText("Book");
         btnBookDoctor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnBookDoctorActionPerformed(evt);
             }
         });
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 735, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(16, 16, 16)
-                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(288, 288, 288)
-                                .addComponent(btnBookDoctor)))
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(8, 8, 8)
-                .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(btnBookDoctor)
-                .addContainerGap(16, Short.MAX_VALUE))
-        );
+        add(btnBookDoctor, new org.netbeans.lib.awtextra.AbsoluteConstraints(324, 248, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void tblDoctorMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tblDoctorMouseClicked

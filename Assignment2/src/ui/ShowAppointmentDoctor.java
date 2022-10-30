@@ -48,6 +48,9 @@ public class ShowAppointmentDoctor extends javax.swing.JPanel {
         txtPatientName = new javax.swing.JTextField();
         btnPatientsubmit = new javax.swing.JButton();
 
+        setBackground(new java.awt.Color(204, 255, 255));
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
         tblappointmentdoctor.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null},
@@ -74,15 +77,31 @@ public class ShowAppointmentDoctor extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(tblappointmentdoctor);
 
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 891, 127));
+
+        lblPatientVitalSign.setForeground(new java.awt.Color(0, 102, 102));
         lblPatientVitalSign.setText("Vital Signs");
+        add(lblPatientVitalSign, new org.netbeans.lib.awtextra.AbsoluteConstraints(349, 145, 94, 28));
 
+        lblpatienttemperature.setForeground(new java.awt.Color(0, 102, 102));
         lblpatienttemperature.setText("Temperature");
+        add(lblpatienttemperature, new org.netbeans.lib.awtextra.AbsoluteConstraints(226, 264, -1, -1));
+        add(txtPatienttemperature, new org.netbeans.lib.awtextra.AbsoluteConstraints(454, 256, 217, 34));
 
+        lblPatientBloodPressure.setForeground(new java.awt.Color(0, 102, 102));
         lblPatientBloodPressure.setText("Blood Pressure");
+        add(lblPatientBloodPressure, new org.netbeans.lib.awtextra.AbsoluteConstraints(226, 328, -1, -1));
+        add(txtPatientBloodPressure, new org.netbeans.lib.awtextra.AbsoluteConstraints(454, 313, 217, 32));
 
+        lblPatientDescription.setForeground(new java.awt.Color(0, 102, 102));
         lblPatientDescription.setText("Description");
+        add(lblPatientDescription, new org.netbeans.lib.awtextra.AbsoluteConstraints(227, 385, -1, -1));
+        add(txtPatientDescription, new org.netbeans.lib.awtextra.AbsoluteConstraints(454, 382, 217, -1));
 
+        lblPatientname.setForeground(new java.awt.Color(0, 102, 102));
         lblPatientname.setText("Name");
+        add(lblPatientname, new org.netbeans.lib.awtextra.AbsoluteConstraints(226, 189, 58, 26));
+        add(txtPatientName, new org.netbeans.lib.awtextra.AbsoluteConstraints(454, 187, 217, 32));
 
         btnPatientsubmit.setText("Submit");
         btnPatientsubmit.addActionListener(new java.awt.event.ActionListener() {
@@ -90,68 +109,7 @@ public class ShowAppointmentDoctor extends javax.swing.JPanel {
                 btnPatientsubmitActionPerformed(evt);
             }
         });
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 777, Short.MAX_VALUE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(45, 45, 45)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(lblpatienttemperature)
-                                    .addComponent(lblPatientBloodPressure)
-                                    .addComponent(lblPatientDescription)
-                                    .addComponent(lblPatientname))
-                                .addGap(39, 39, 39)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(txtPatientDescription, javax.swing.GroupLayout.DEFAULT_SIZE, 217, Short.MAX_VALUE)
-                                    .addComponent(txtPatienttemperature)
-                                    .addComponent(txtPatientName)
-                                    .addComponent(txtPatientBloodPressure)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(136, 136, 136)
-                                .addComponent(btnPatientsubmit)))
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
-            .addGroup(layout.createSequentialGroup()
-                .addGap(128, 128, 128)
-                .addComponent(lblPatientVitalSign, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(107, 107, 107)
-                        .addComponent(lblPatientname))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(39, 39, 39)
-                        .addComponent(lblPatientVitalSign, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(34, 34, 34)
-                        .addComponent(txtPatientName, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblpatienttemperature)
-                    .addComponent(txtPatienttemperature, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblPatientBloodPressure)
-                    .addComponent(txtPatientBloodPressure, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtPatientDescription, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblPatientDescription))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 36, Short.MAX_VALUE)
-                .addComponent(btnPatientsubmit)
-                .addGap(9, 9, 9))
-        );
+        add(btnPatientsubmit, new org.netbeans.lib.awtextra.AbsoluteConstraints(371, 443, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void tblappointmentdoctorMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tblappointmentdoctorMouseClicked

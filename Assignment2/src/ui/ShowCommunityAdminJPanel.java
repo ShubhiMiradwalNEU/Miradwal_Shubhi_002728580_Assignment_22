@@ -47,6 +47,9 @@ Person per= new Person();
         btnDelete = new javax.swing.JButton();
         CombobuttonCommunityAdmin = new javax.swing.JComboBox<>();
 
+        setBackground(new java.awt.Color(204, 255, 255));
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
         tblCommunityAdmin.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -73,27 +76,46 @@ Person per= new Person();
         });
         jScrollPane1.setViewportView(tblCommunityAdmin);
 
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, 683, 106));
+
+        lblCommunityAdminname.setForeground(new java.awt.Color(0, 102, 102));
         lblCommunityAdminname.setText("Name");
+        add(lblCommunityAdminname, new org.netbeans.lib.awtextra.AbsoluteConstraints(59, 219, 93, 29));
+        add(txtCommunityAdminname, new org.netbeans.lib.awtextra.AbsoluteConstraints(194, 219, 152, 29));
 
+        lblCommunityAdminGender.setForeground(new java.awt.Color(0, 102, 102));
         lblCommunityAdminGender.setText("Gender");
+        add(lblCommunityAdminGender, new org.netbeans.lib.awtextra.AbsoluteConstraints(59, 266, 93, 27));
 
+        lblCommunityAdminHouse.setForeground(new java.awt.Color(0, 102, 102));
         lblCommunityAdminHouse.setText("House");
+        add(lblCommunityAdminHouse, new org.netbeans.lib.awtextra.AbsoluteConstraints(59, 314, -1, -1));
+        add(txtCommunityAdminhouse, new org.netbeans.lib.awtextra.AbsoluteConstraints(194, 311, 152, -1));
 
+        lblCommunityAdminCity.setForeground(new java.awt.Color(0, 102, 102));
         lblCommunityAdminCity.setText("City");
+        add(lblCommunityAdminCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(59, 361, 58, 25));
+        add(txtCommunityAdminCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(194, 362, 152, -1));
 
+        btnUpdate.setBackground(new java.awt.Color(0, 0, 0));
+        btnUpdate.setForeground(new java.awt.Color(255, 255, 255));
         btnUpdate.setText("Update");
         btnUpdate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnUpdateActionPerformed(evt);
             }
         });
+        add(btnUpdate, new org.netbeans.lib.awtextra.AbsoluteConstraints(431, 242, -1, -1));
 
+        btnDelete.setBackground(new java.awt.Color(0, 0, 0));
+        btnDelete.setForeground(new java.awt.Color(255, 255, 255));
         btnDelete.setText("Delete");
         btnDelete.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnDeleteActionPerformed(evt);
             }
         });
+        add(btnDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(582, 242, -1, -1));
 
         CombobuttonCommunityAdmin.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Female", "Male" }));
         CombobuttonCommunityAdmin.addActionListener(new java.awt.event.ActionListener() {
@@ -101,67 +123,7 @@ Person per= new Person();
                 CombobuttonCommunityAdminActionPerformed(evt);
             }
         });
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 683, Short.MAX_VALUE)
-                .addContainerGap())
-            .addGroup(layout.createSequentialGroup()
-                .addGap(59, 59, 59)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(lblCommunityAdminGender, javax.swing.GroupLayout.DEFAULT_SIZE, 93, Short.MAX_VALUE)
-                        .addComponent(lblCommunityAdminname, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addComponent(lblCommunityAdminHouse)
-                    .addComponent(lblCommunityAdminCity, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(42, 42, 42)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(txtCommunityAdminname)
-                    .addComponent(txtCommunityAdminhouse)
-                    .addComponent(txtCommunityAdminCity)
-                    .addComponent(CombobuttonCommunityAdmin, 0, 152, Short.MAX_VALUE))
-                .addGap(85, 85, 85)
-                .addComponent(btnUpdate)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btnDelete)
-                .addGap(41, 41, 41))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(107, 107, 107)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lblCommunityAdminname, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtCommunityAdminname, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(btnUpdate)
-                            .addComponent(btnDelete))
-                        .addGap(1, 1, 1)))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(lblCommunityAdminGender, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(2, 2, 2)
-                        .addComponent(CombobuttonCommunityAdmin)))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblCommunityAdminHouse)
-                    .addComponent(txtCommunityAdminhouse, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(27, 27, 27)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblCommunityAdminCity, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtCommunityAdminCity, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(90, Short.MAX_VALUE))
-        );
+        add(CombobuttonCommunityAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(194, 268, 152, 25));
     }// </editor-fold>//GEN-END:initComponents
 
     private void tblCommunityAdminMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tblCommunityAdminMouseClicked

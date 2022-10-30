@@ -34,48 +34,39 @@ public class DoctorJFrame extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jPanel1.setBackground(new java.awt.Color(153, 255, 255));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        btnViewPatients.setBackground(new java.awt.Color(0, 0, 0));
+        btnViewPatients.setForeground(new java.awt.Color(255, 255, 255));
         btnViewPatients.setText("View Patients");
         btnViewPatients.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnViewPatientsActionPerformed(evt);
             }
         });
+        jPanel1.add(btnViewPatients, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 25, -1, -1));
 
+        btnProfile.setBackground(new java.awt.Color(0, 0, 0));
+        btnProfile.setForeground(new java.awt.Color(255, 255, 255));
         btnProfile.setText("Profile");
+        jPanel1.add(btnProfile, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 78, 109, -1));
 
+        btnBack.setBackground(new java.awt.Color(0, 0, 0));
+        btnBack.setForeground(new java.awt.Color(255, 255, 255));
         btnBack.setText("Back");
         btnBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnBackActionPerformed(evt);
             }
         });
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnViewPatients)
-                    .addComponent(btnProfile)
-                    .addComponent(btnBack))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(25, 25, 25)
-                .addComponent(btnViewPatients)
-                .addGap(30, 30, 30)
-                .addComponent(btnProfile)
-                .addGap(30, 30, 30)
-                .addComponent(btnBack)
-                .addContainerGap(204, Short.MAX_VALUE))
-        );
+        jPanel1.add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 131, 109, -1));
 
         splitPane.setLeftComponent(jPanel1);
+
+        jPanel2.setBackground(new java.awt.Color(204, 255, 255));
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -90,16 +81,7 @@ public class DoctorJFrame extends javax.swing.JFrame {
 
         splitPane.setRightComponent(jPanel2);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(splitPane, javax.swing.GroupLayout.DEFAULT_SIZE, 635, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(splitPane)
-        );
+        getContentPane().add(splitPane, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 635, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
