@@ -48,7 +48,7 @@ public class DoctorsInHospitalJPanel extends javax.swing.JPanel {
                 {null, null, null, null, null, null}
             },
             new String [] {
-                "Name", "Gender", "PhysicianType", "House", "City", "HospitalName"
+                "Name", "Gender", "PhysicianType", "House", "Community", "HospitalName"
             }
         ) {
             boolean[] canEdit = new boolean [] {
@@ -95,27 +95,12 @@ public class DoctorsInHospitalJPanel extends javax.swing.JPanel {
             row[1] = doc.getGender();
             row[2] = doc.getPhysicianType();
             row[3] = doc.getHouse();
-            row[4] = doc.getCity();
+            row[4] = doc.getCommunity();
             row[5] = doc.getHospitalName();
             model.addRow(row);
         }       
     }
-    private void populateTableDoctorInHospital() {
-        DefaultTableModel model = (DefaultTableModel) tblAddDoctors.getModel();
-        model.setRowCount(0);
-        
-        for(Doctor docHosp: Doctor.getDoctorInHospitalDirectory()){
-            System.out.println("=========  Populate Add doctors in hospital =================");
-            System.out.println(docHosp);
-            Object[] row = new Object[6];
-            row[0] = docHosp;
-            row[1] = docHosp.getGender();
-            row[2] = docHosp.getPhysicianType();
-            row[3] = docHosp.getHouse();
-            row[4] = docHosp.getCity();
-            row[5] = docHosp.getHospitalName();
-            model.addRow(row);
-        }
+   
         
     }
-}
+

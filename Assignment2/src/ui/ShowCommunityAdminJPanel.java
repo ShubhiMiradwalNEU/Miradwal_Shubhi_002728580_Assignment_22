@@ -4,9 +4,11 @@
  */
 package ui;
 
+import javax.swing.DefaultComboBoxModel;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import model.CommunityAdmin;
+import static model.CommunityAdmin.communitydirectory;
 import model.Doctor;
 import model.Person;
 
@@ -22,6 +24,7 @@ public class ShowCommunityAdminJPanel extends javax.swing.JPanel {
     public ShowCommunityAdminJPanel() {
         initComponents();
         populateTable();
+        populatecommunity();
     }
     CommunityAdmin ca= new CommunityAdmin();
 Person per= new Person();
@@ -41,11 +44,11 @@ Person per= new Person();
         lblCommunityAdminGender = new javax.swing.JLabel();
         lblCommunityAdminHouse = new javax.swing.JLabel();
         txtCommunityAdminhouse = new javax.swing.JTextField();
-        lblCommunityAdminCity = new javax.swing.JLabel();
-        txtCommunityAdminCity = new javax.swing.JTextField();
+        lblCommunityAdminCommunity = new javax.swing.JLabel();
         btnUpdate = new javax.swing.JButton();
         btnDelete = new javax.swing.JButton();
         CombobuttonCommunityAdmin = new javax.swing.JComboBox<>();
+        comboBoxCommunity = new javax.swing.JComboBox<>();
 
         setBackground(new java.awt.Color(204, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -58,7 +61,7 @@ Person per= new Person();
                 {null, null, null, null}
             },
             new String [] {
-                "Name", "Gender", "House", "City"
+                "Name", "Gender", "House", "Community"
             }
         ) {
             boolean[] canEdit = new boolean [] {
@@ -99,13 +102,10 @@ Person per= new Person();
         txtCommunityAdminhouse.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
         add(txtCommunityAdminhouse, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 320, 152, -1));
 
-        lblCommunityAdminCity.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
-        lblCommunityAdminCity.setForeground(new java.awt.Color(0, 102, 102));
-        lblCommunityAdminCity.setText("City");
-        add(lblCommunityAdminCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 370, 58, 25));
-
-        txtCommunityAdminCity.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
-        add(txtCommunityAdminCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 370, 152, -1));
+        lblCommunityAdminCommunity.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
+        lblCommunityAdminCommunity.setForeground(new java.awt.Color(0, 102, 102));
+        lblCommunityAdminCommunity.setText("Community");
+        add(lblCommunityAdminCommunity, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 370, 58, 25));
 
         btnUpdate.setBackground(new java.awt.Color(0, 0, 0));
         btnUpdate.setForeground(new java.awt.Color(255, 255, 255));
@@ -135,6 +135,9 @@ Person per= new Person();
             }
         });
         add(CombobuttonCommunityAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 280, 152, 25));
+
+        comboBoxCommunity.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        add(comboBoxCommunity, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 370, 150, 20));
     }// </editor-fold>//GEN-END:initComponents
 
     private void tblCommunityAdminMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tblCommunityAdminMouseClicked
@@ -152,7 +155,7 @@ Person per= new Person();
         txtCommunityAdminname.setText(selectedCommunity.getName());
         CombobuttonCommunityAdmin.setSelectedItem(selectedCommunity.getGender());
         txtCommunityAdminhouse.setText(selectedCommunity.getHouse());
-        txtCommunityAdminCity.setText(selectedCommunity.getCity());
+        CombobuttonCommunityAdmin.setSelectedItem(selectedCommunity.getCommunity());
  
 
     }//GEN-LAST:event_tblCommunityAdminMouseClicked
@@ -189,7 +192,7 @@ Person per= new Person();
             String gender = (String) CombobuttonCommunityAdmin.getSelectedItem();
             //String physicianType = txtPhysicianType.getText();
             String house = txtCommunityAdminhouse.getText();          
-            String city = txtCommunityAdminCity.getText();
+            String city = (String) comboBoxCommunity.getSelectedItem();
 
             CommunityAdmin updateca = new CommunityAdmin();            
             //-- set updated value on the table row
@@ -198,7 +201,7 @@ Person per= new Person();
             //updateDoc.setPhysicianType(physicianType);
             updateca.setHouse(house);
             //updateDoc.setHospitalName(hospitalName);
-            updateca.setCity(city);
+            updateca.setCommunity(city);
             ca.updateCommunityAdmin(updateca,selectedRowIndex);
             
             //UPDATE DOCTOR DATA IN PERSON DIRECTORY
@@ -210,7 +213,7 @@ Person per= new Person();
             //updatePerson.setPhysicianType(physicianType);
             updatePerson.setHouse(house);
             //updatePerson.setHospitalName(hospitalName);
-            updatePerson.setCity(city);
+            updatePerson.setCommunity(city);
             per.updatePerson(per, selectedRowIndex);
             
             populateTable();
@@ -223,13 +226,13 @@ Person per= new Person();
     private javax.swing.JComboBox<String> CombobuttonCommunityAdmin;
     private javax.swing.JButton btnDelete;
     private javax.swing.JButton btnUpdate;
+    private javax.swing.JComboBox<String> comboBoxCommunity;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JLabel lblCommunityAdminCity;
+    private javax.swing.JLabel lblCommunityAdminCommunity;
     private javax.swing.JLabel lblCommunityAdminGender;
     private javax.swing.JLabel lblCommunityAdminHouse;
     private javax.swing.JLabel lblCommunityAdminname;
     private javax.swing.JTable tblCommunityAdmin;
-    private javax.swing.JTextField txtCommunityAdminCity;
     private javax.swing.JTextField txtCommunityAdminhouse;
     private javax.swing.JTextField txtCommunityAdminname;
     // End of variables declaration//GEN-END:variables
@@ -242,13 +245,22 @@ private void populateTable() {
             Object[] row = new Object[4];
             row[0] = doc;
             row[1] = doc.getGender();
-           // row[2] = doc.getPhysicianType();
             row[2] = doc.getHouse();
-            row[3] = doc.getCity();
+            row[3] = doc.getCommunity();
             model.addRow(row);
         }
         
+        
     }
+
+private void populatecommunity() {
+
+    comboBoxCommunity.setModel(new DefaultComboBoxModel<String>(communitydirectory.toArray(new String[0])));
+
+        
+        
+    }
+
 
 
 }

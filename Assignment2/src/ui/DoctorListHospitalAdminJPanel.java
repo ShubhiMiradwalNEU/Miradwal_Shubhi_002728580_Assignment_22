@@ -49,7 +49,7 @@ public class DoctorListHospitalAdminJPanel extends javax.swing.JPanel {
                 {null, null, null, null, null, null}
             },
             new String [] {
-                "Name", "Gender", "PhysicianType", "House", "City", "HospitalName"
+                "Name", "Gender", "PhysicianType", "House", "Community", "HospitalName"
             }
         ) {
             boolean[] canEdit = new boolean [] {
@@ -67,12 +67,12 @@ public class DoctorListHospitalAdminJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(tblDoctor);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 56, 735, 250));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 90, 730, 240));
 
         jLabel1.setFont(new java.awt.Font("Academy Engraved LET", 1, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 102, 102));
         jLabel1.setText("Add Doctors in Hospital");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(306, 16, 280, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 30, 280, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void tblDoctorMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tblDoctorMouseClicked
@@ -87,7 +87,9 @@ public class DoctorListHospitalAdminJPanel extends javax.swing.JPanel {
         Doctor selectedDoctor = (Doctor) model.getValueAt(selectedRowIndex, 0);
         System.out.println(selectedDoctor);
 
-        doc.addDoctorInHospital(selectedDoctor.getName(), selectedDoctor.getGender(), selectedDoctor.getPhysicianType(), selectedDoctor.getHouse(), selectedDoctor.getCity(), selectedDoctor.getHospitalName());
+        //doc.addDoctorInHospital(selectedDoctor.getName(), selectedDoctor.getGender(), selectedDoctor.getPhysicianType(), selectedDoctor.getHouse(), selectedDoctor.getCommunity(),selectedDoctor.getCity() selectedDoctor.getHospitalName());
+        doc.addDoctorInHospital(selectedDoctor.getName(),selectedDoctor.getGender(),selectedDoctor.getPhysicianType(),selectedDoctor.getHouse(),selectedDoctor.getCommunity(),selectedDoctor.getCity(),selectedDoctor.getHospitalName());
+               // String name, String gender, String physicianType, String house, String community,String city, String hospitalName
         JOptionPane.showMessageDialog(this, "Doctor added in hospital ");
 
     }//GEN-LAST:event_tblDoctorMouseClicked
@@ -108,7 +110,7 @@ public class DoctorListHospitalAdminJPanel extends javax.swing.JPanel {
             row[1] = doc.getGender();
             row[2] = doc.getPhysicianType();
             row[3] = doc.getHouse();
-            row[4] = doc.getCity();
+            row[4] = doc.getCommunity();
             row[5] = doc.getHospitalName();
             model.addRow(row);
         }

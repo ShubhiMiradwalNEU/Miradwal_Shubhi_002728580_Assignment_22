@@ -14,16 +14,32 @@ public class CommunityAdmin {
     String gender;
     String house;
     String city;
+    String community;
+
+    public CommunityAdmin(String community) {
+        this.community = community;
+    }
+
+    public String getCommunity() {
+        return community;
+    }
+
+    public void setCommunity(String community) {
+        this.community = community;
+    }
     static public List<CommunityAdmin> communityAdminDirectory= new ArrayList<CommunityAdmin>();
+    static public List<String>communitydirectory= new ArrayList<>();
     
     public CommunityAdmin(){
     }
 
-    public CommunityAdmin(String name, String gender, String house, String city) {
+    public CommunityAdmin(String name, String gender, String house,String community, String city) {
         this.name = name;
         this.gender = gender;
         this.house = house;
+        this.community= community;
         this.city = city;
+        
     }
 
     @Override
@@ -71,10 +87,10 @@ public class CommunityAdmin {
     public static void setCommunityAdminDirectory(List<CommunityAdmin> communityAdminDirectory) {
         CommunityAdmin.communityAdminDirectory = communityAdminDirectory;
     }
-    public void  addNewCommunityAdmin(String name, String gender, String house, String city) 
+    public void  addNewCommunityAdmin(String name, String gender, String house,String çommunity, String city) 
     {
         
-        communityAdminDirectory.add(new CommunityAdmin(name, gender, house, city));
+        communityAdminDirectory.add(new CommunityAdmin(name, gender, house, çommunity,city));
         for(CommunityAdmin ca:communityAdminDirectory){
             System.out.println(ca.name+"     "+ca.house);
             System.out.println(getCommunityAdminDirectory());

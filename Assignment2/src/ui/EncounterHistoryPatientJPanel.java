@@ -56,7 +56,7 @@ public class EncounterHistoryPatientJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(tblPatientEncounterHistory);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 500));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 600));
     }// </editor-fold>//GEN-END:initComponents
 
     private void tblPatientEncounterHistoryMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tblPatientEncounterHistoryMouseClicked

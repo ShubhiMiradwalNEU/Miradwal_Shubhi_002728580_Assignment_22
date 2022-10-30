@@ -4,8 +4,10 @@
  */
 package ui;
 
+import javax.swing.DefaultComboBoxModel;
 import javax.swing.JOptionPane;
 import model.CommunityAdmin;
+import static model.CommunityAdmin.communitydirectory;
 import model.Person;
 
 /**
@@ -20,6 +22,7 @@ public class AddCommunityAdminJPanel extends javax.swing.JPanel {
     Person person = new Person();
     public AddCommunityAdminJPanel() {
         initComponents();
+        //populateTable();
     }
       CommunityAdmin cb= new CommunityAdmin();
     /**
@@ -41,6 +44,8 @@ public class AddCommunityAdminJPanel extends javax.swing.JPanel {
         lblCity = new javax.swing.JLabel();
         txtCity = new javax.swing.JTextField();
         btnSave = new javax.swing.JButton();
+        lblCommunity = new javax.swing.JLabel();
+        addcommunityadmin = new javax.swing.JTextField();
 
         setBackground(new java.awt.Color(204, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -75,52 +80,60 @@ public class AddCommunityAdminJPanel extends javax.swing.JPanel {
             }
         });
 
+        lblCommunity.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
+        lblCommunity.setText("Community");
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(149, 149, 149)
+                .addComponent(btnSave, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(75, 75, 75)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(109, 109, 109)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblGender)
-                            .addComponent(lblName)
-                            .addComponent(lblHouse)
-                            .addComponent(lblCity, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtName, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtHouse, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtCity, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(comboBoxGender, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(196, 196, 196)
-                        .addComponent(btnSave, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(181, Short.MAX_VALUE))
+                    .addComponent(lblHouse)
+                    .addComponent(lblCity, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblGender)
+                    .addComponent(lblName)
+                    .addComponent(lblCommunity))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 136, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(txtCity, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(comboBoxGender, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtHouse, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtName, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(addcommunityadmin, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(82, 82, 82))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(84, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblName))
-                .addGap(45, 45, 45)
+                    .addComponent(lblName)
+                    .addComponent(txtName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(33, 33, 33)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(comboBoxGender, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblGender))
-                .addGap(49, 49, 49)
+                .addGap(31, 31, 31)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtHouse, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblHouse))
-                .addGap(37, 37, 37)
+                .addGap(30, 30, 30)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblCommunity)
+                    .addComponent(addcommunityadmin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(34, 34, 34)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblCity, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtCity, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(42, 42, 42)
+                .addGap(65, 65, 65)
                 .addComponent(btnSave, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(101, 101, 101))
+                .addGap(63, 63, 63))
         );
 
         add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 500, 500));
@@ -132,6 +145,7 @@ public class AddCommunityAdminJPanel extends javax.swing.JPanel {
         String name = txtName.getText();
         String gender = (String) comboBoxGender.getSelectedItem();
         String house = txtHouse.getText();
+        String community=  addcommunityadmin.getText();
         String city = txtCity.getText();
         
 
@@ -141,8 +155,10 @@ public class AddCommunityAdminJPanel extends javax.swing.JPanel {
         String password = name;
         String usertype = "community admin";
         System.out.println("=======CreateCommunityAdminJPanel================="+username+"=="+password+"=="+usertype);
-        person.addNewPerson(username, password, usertype, name, ABORT, gender, house, city, "NoPhysicianType", "NoHospitalName");
-        cb.addNewCommunityAdmin(name, gender, house, city);
+        person.addNewPerson(username, password, usertype, name, ABORT, gender, house, community,city, "NoPhysicianType", "NoHospitalName");
+        cb.addNewCommunityAdmin(name, gender, house,community, city);
+        communitydirectory.add(community);
+        
 //        for(Person per: Person.getPersonDirectory()){
 //            System.out.println(per.getName()+per.getPassword()+per.getCity());
 //        }
@@ -152,10 +168,12 @@ public class AddCommunityAdminJPanel extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextField addcommunityadmin;
     private javax.swing.JButton btnSave;
     private javax.swing.JComboBox<String> comboBoxGender;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel lblCity;
+    private javax.swing.JLabel lblCommunity;
     private javax.swing.JLabel lblGender;
     private javax.swing.JLabel lblHouse;
     private javax.swing.JLabel lblName;
@@ -163,4 +181,9 @@ public class AddCommunityAdminJPanel extends javax.swing.JPanel {
     private javax.swing.JTextField txtHouse;
     private javax.swing.JTextField txtName;
     // End of variables declaration//GEN-END:variables
+//private void populateTable()
+//{
+//    comboBoxCommunity.setModel(new DefaultComboBoxModel<String>(communitydirectory.toArray(new String[0])));
+//}
+
 }

@@ -4,9 +4,11 @@
  */
 package ui;
 
+import javax.swing.DefaultComboBoxModel;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import model.CommunityAdmin;
+import static model.CommunityAdmin.communitydirectory;
 import model.Doctor;
 import model.PatientAppointment;
 import model.VitalSigns;
@@ -23,6 +25,7 @@ public class ShowAppointmentDoctor extends javax.swing.JPanel {
     public ShowAppointmentDoctor() {
         initComponents();
         populateTable();
+        //populatecommunity();
     }
     VitalSigns vs= new VitalSigns();
     LoginJPanel lb= new LoginJPanel();
@@ -59,7 +62,7 @@ public class ShowAppointmentDoctor extends javax.swing.JPanel {
                 {null, null, null}
             },
             new String [] {
-                "Name", "City", "Age"
+                "Name", "Community", "Age"
             }
         ) {
             boolean[] canEdit = new boolean [] {
@@ -180,12 +183,13 @@ public class ShowAppointmentDoctor extends javax.swing.JPanel {
         for(PatientAppointment doc: PatientAppointment.getAppointment()){
             Object[] row = new Object[3];
             row[0] = doc;
-            row[1] = doc.getCity();
+            row[1] = doc.getCommunity();
             row[2] = doc.getAge();
             model.addRow(row);
         }
         
     }
+   
         
           }
 

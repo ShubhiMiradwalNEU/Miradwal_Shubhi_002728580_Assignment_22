@@ -14,7 +14,8 @@ import java.util.List;
 public class PatientAppointment {
     String name;
     String doctorName;
-    String city;
+    String community;
+    
     int age;
 
    public static List<PatientAppointment> appointment= new ArrayList<PatientAppointment>();
@@ -28,10 +29,10 @@ public class PatientAppointment {
     }
      public PatientAppointment() {
     }
-    public PatientAppointment(String name, String doctorName, String city, int age) {
+    public PatientAppointment(String name, String doctorName, String community, int age) {
         this.name = name;
         this.doctorName = doctorName;
-        this.city = city;
+        this.community = community;
         this.age = age;
     }
 
@@ -51,12 +52,12 @@ public class PatientAppointment {
         this.doctorName = doctorName;
     }
 
-    public String getCity() {
-        return city;
+    public String getCommunity() {
+        return community;
     }
 
-    public void setCity(String city) {
-        this.city = city;
+    public void setCommunity(String community) {
+        this.community = community;
     }
 
     public int getAge() {

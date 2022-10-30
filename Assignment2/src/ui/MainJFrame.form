@@ -88,7 +88,7 @@
                       <Component id="btnCommunityAdmin" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
                       <Component id="btnSystemAdmin" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="131" max="32767" attributes="0"/>
+                      <EmptySpace pref="226" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -184,7 +184,7 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="292" max="-2" attributes="0"/>
                       <Component id="jLabel1" min="-2" pref="198" max="-2" attributes="0"/>
-                      <EmptySpace pref="260" max="32767" attributes="0"/>
+                      <EmptySpace pref="356" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -193,7 +193,7 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
                       <Component id="jLabel1" min="-2" pref="48" max="-2" attributes="0"/>
-                      <EmptySpace pref="438" max="32767" attributes="0"/>
+                      <EmptySpace pref="533" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>

@@ -61,7 +61,7 @@ public class DoctorBookedJPanel extends javax.swing.JPanel {
         add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 99, 631, 255));
 
         jLabel1.setForeground(new java.awt.Color(0, 102, 102));
-        jLabel1.setText("Encounter History");
+        jLabel1.setText("Appointment");
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(293, 38, 129, -1));
     }// </editor-fold>//GEN-END:initComponents
 

@@ -5,9 +5,11 @@
 package ui;
 
 import java.awt.Image;
+import javax.swing.DefaultComboBoxModel;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
+import static model.CommunityAdmin.communitydirectory;
 import model.HospitalAdmin;
 
 /**
@@ -25,6 +27,7 @@ public class ShowHospitalAdminJPanel extends javax.swing.JPanel {
         initComponents();
        
         populateTable();
+        populatecommunity();
     }
 
     /**
@@ -43,11 +46,11 @@ public class ShowHospitalAdminJPanel extends javax.swing.JPanel {
         lblGender = new javax.swing.JLabel();
         lblHospitalName = new javax.swing.JLabel();
         lblCity = new javax.swing.JLabel();
-        txtCity = new javax.swing.JTextField();
         txtHospitalName = new javax.swing.JTextField();
         btnUpdate = new javax.swing.JButton();
         btnDelete = new javax.swing.JButton();
         comboGender = new javax.swing.JComboBox<>();
+        comboBoxCommunity = new javax.swing.JComboBox<>();
 
         setBackground(new java.awt.Color(204, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -62,7 +65,7 @@ public class ShowHospitalAdminJPanel extends javax.swing.JPanel {
                 {null, null, null, null}
             },
             new String [] {
-                "Name", "Gender", "HospitalName", "City"
+                "Name", "Gender", "HospitalName", "Community"
             }
         ) {
             boolean[] canEdit = new boolean [] {
@@ -101,9 +104,8 @@ public class ShowHospitalAdminJPanel extends javax.swing.JPanel {
 
         lblCity.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
         lblCity.setForeground(new java.awt.Color(0, 102, 102));
-        lblCity.setText("CITY");
+        lblCity.setText("Community");
         add(lblCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 410, 114, -1));
-        add(txtCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 400, 106, -1));
 
         txtHospitalName.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -134,6 +136,9 @@ public class ShowHospitalAdminJPanel extends javax.swing.JPanel {
 
         comboGender.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Female", "Male" }));
         add(comboGender, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 300, 106, -1));
+
+        comboBoxCommunity.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        add(comboBoxCommunity, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 400, 110, 30));
     }// </editor-fold>//GEN-END:initComponents
 
     private void txtHospitalNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtHospitalNameActionPerformed
@@ -155,7 +160,7 @@ public class ShowHospitalAdminJPanel extends javax.swing.JPanel {
         txtName.setText(selectedHospitalAdmin.getName());
         comboGender.setSelectedItem(selectedHospitalAdmin.getGender());
         txtHospitalName.setText(selectedHospitalAdmin.getHospitalName());
-        txtCity.setText(selectedHospitalAdmin.getCity());
+        comboBoxCommunity.setSelectedItem(selectedHospitalAdmin.getCommunity());
 
     }//GEN-LAST:event_tblHospitalAdminsMouseClicked
 
@@ -169,14 +174,14 @@ public class ShowHospitalAdminJPanel extends javax.swing.JPanel {
             String name = txtName.getText();
             String gender = (String) comboGender.getSelectedItem();
             String hospitalName = txtHospitalName.getText();
-            String city = txtCity.getText();
+            String city = (String)comboBoxCommunity.getSelectedItem();
             
             HospitalAdmin updateHospitalAdmin = new HospitalAdmin();
             //-- set updated value on the table row
             updateHospitalAdmin.setName(name);
             updateHospitalAdmin.setGender(gender);
             updateHospitalAdmin.setHospitalName(hospitalName);
-            updateHospitalAdmin.setCity(city);
+            updateHospitalAdmin.setCommunity(city);
             ha.updateHospitalAdmin(updateHospitalAdmin,selectedRowIndex);
             populateTable();
             
@@ -204,6 +209,7 @@ public class ShowHospitalAdminJPanel extends javax.swing.JPanel {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnDelete;
     private javax.swing.JButton btnUpdate;
+    private javax.swing.JComboBox<String> comboBoxCommunity;
     private javax.swing.JComboBox<String> comboGender;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblCity;
@@ -211,7 +217,6 @@ public class ShowHospitalAdminJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel lblHospitalName;
     private javax.swing.JLabel lblName;
     private javax.swing.JTable tblHospitalAdmins;
-    private javax.swing.JTextField txtCity;
     private javax.swing.JTextField txtHospitalName;
     private javax.swing.JTextField txtName;
     // End of variables declaration//GEN-END:variables
@@ -225,9 +230,14 @@ public class ShowHospitalAdminJPanel extends javax.swing.JPanel {
             row[0] = ha;
             row[1] = ha.getGender();
             row[2] = ha.getHospitalName();
-            row[3] = ha.getCity();
+            row[3] = ha.getCommunity();
             model.addRow(row);
         }
+        
+    }
+     private void populatecommunity() {
+
+    comboBoxCommunity.setModel(new DefaultComboBoxModel<String>(communitydirectory.toArray(new String[0])));  
         
     }
 }

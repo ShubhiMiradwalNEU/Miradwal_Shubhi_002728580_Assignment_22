@@ -4,8 +4,10 @@
  */
 package ui;
 
+import javax.swing.DefaultComboBoxModel;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
+import static model.CommunityAdmin.communitydirectory;
 import model.Patient;
 import model.Person;
 
@@ -24,6 +26,7 @@ public class ShowPatientJPanel extends javax.swing.JPanel {
         initComponents();
         
         populateTable();
+        populatecommunity();
     }
 
     /**
@@ -48,7 +51,7 @@ public class ShowPatientJPanel extends javax.swing.JPanel {
         txtAge = new javax.swing.JTextField();
         btnUpdate = new javax.swing.JButton();
         btnDelete = new javax.swing.JButton();
-        txtCity = new javax.swing.JTextField();
+        ComboboxCommunity = new javax.swing.JComboBox<>();
 
         setBackground(new java.awt.Color(204, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -61,7 +64,7 @@ public class ShowPatientJPanel extends javax.swing.JPanel {
                 {null, null, null, null, null}
             },
             new String [] {
-                "Name", "Age", "Gender", "House", "City"
+                "Name", "Age", "Gender", "House", "Community"
             }
         ) {
             boolean[] canEdit = new boolean [] {
@@ -105,7 +108,7 @@ public class ShowPatientJPanel extends javax.swing.JPanel {
         add(lblHouse, new org.netbeans.lib.awtextra.AbsoluteConstraints(39, 318, 114, -1));
 
         lblCity.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
-        lblCity.setText("CITY");
+        lblCity.setText("Community");
         add(lblCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(39, 359, 114, -1));
 
         txtHouse.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
@@ -134,8 +137,8 @@ public class ShowPatientJPanel extends javax.swing.JPanel {
         });
         add(btnDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 180, 130, 30));
 
-        txtCity.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
-        add(txtCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(171, 356, 106, -1));
+        ComboboxCommunity.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        add(ComboboxCommunity, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 360, 110, 30));
     }// </editor-fold>//GEN-END:initComponents
 
     private void tblPatientMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tblPatientMouseClicked
@@ -154,7 +157,7 @@ public class ShowPatientJPanel extends javax.swing.JPanel {
         comboGender.setSelectedItem(selectedPatient.getGender());
         txtAge.setText(Integer.toString(selectedPatient.getAge()));
         txtHouse.setText(selectedPatient.getHouse());
-        txtCity.setText(selectedPatient.getCity());
+        ComboboxCommunity.setSelectedItem(selectedPatient.getCommunity());
         
     }//GEN-LAST:event_tblPatientMouseClicked
 
@@ -169,7 +172,7 @@ public class ShowPatientJPanel extends javax.swing.JPanel {
             int age = Integer.parseInt(txtAge.getText());
             String gender = (String) comboGender.getSelectedItem();
             String house = txtHouse.getText();
-            String city = txtCity.getText();
+            String city = (String)ComboboxCommunity.getSelectedItem();
             
             //UPDATE PATIENTS DATA IN PATIENT DIRECTORY
             Patient updatePatient = new Patient();
@@ -222,6 +225,7 @@ public class ShowPatientJPanel extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JComboBox<String> ComboboxCommunity;
     private javax.swing.JButton btnDelete;
     private javax.swing.JButton btnUpdate;
     private javax.swing.JComboBox<String> comboGender;
@@ -233,7 +237,6 @@ public class ShowPatientJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel lblName;
     private javax.swing.JTable tblPatient;
     private javax.swing.JTextField txtAge;
-    private javax.swing.JTextField txtCity;
     private javax.swing.JTextField txtHouse;
     private javax.swing.JTextField txtName;
     // End of variables declaration//GEN-END:variables
@@ -248,8 +251,13 @@ public class ShowPatientJPanel extends javax.swing.JPanel {
             row[1] = pa.getAge();
             row[2] = pa.getGender();
             row[3] = pa.getHouse();
-            row[4] = pa.getCity();
+            row[4] = pa.getCommunity();
             model.addRow(row);}
+        
+    }
+       private void populatecommunity() {
+
+    ComboboxCommunity.setModel(new DefaultComboBoxModel<String>(communitydirectory.toArray(new String[0])));  
         
     }
 }

@@ -28,6 +28,15 @@ public class LoginJPanel extends javax.swing.JPanel {
        public static String paname;
        public static int paAge;
        public static String docName;
+       public static String pacommunity;
+
+    public static String getPacommunity() {
+        return pacommunity;
+    }
+
+    public static void setPacommunity(String pacommunity) {
+        LoginJPanel.pacommunity = pacommunity;
+    }
 
     public static String getDocName() {
         return docName;
@@ -159,11 +168,12 @@ public class LoginJPanel extends javax.swing.JPanel {
                     
                 }
                 else if(person.getUserType().equals("patient")){
-                    LoginJPanel.setPacity(person.getCity());
+                    //LoginJPanel.setPacity(person.getCity());
                     PatientJFrame patient = new PatientJFrame();
                       LoginJPanel.setPaname(person.getName());
                     LoginJPanel.setPaAge(person.getAge());
                     LoginJPanel.setPacity(person.getCity());
+                       LoginJPanel.setPacommunity(person.getCommunity());
                     patient.setVisible(true);
                     
                     

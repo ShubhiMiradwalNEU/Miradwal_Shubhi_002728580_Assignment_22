@@ -18,6 +18,7 @@ public class MainJFrame extends javax.swing.JFrame {
     Person person = new Person();
     public MainJFrame() {
         initComponents();
+        createsystemadmin();
     }
  
 
@@ -125,7 +126,7 @@ public class MainJFrame extends javax.swing.JFrame {
                 .addComponent(btnCommunityAdmin)
                 .addGap(43, 43, 43)
                 .addComponent(btnSystemAdmin)
-                .addContainerGap(131, Short.MAX_VALUE))
+                .addContainerGap(226, Short.MAX_VALUE))
         );
 
         splitPane.setLeftComponent(jPanel1);
@@ -143,14 +144,14 @@ public class MainJFrame extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(292, 292, 292)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(260, Short.MAX_VALUE))
+                .addContainerGap(356, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(19, 19, 19)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(438, Short.MAX_VALUE))
+                .addContainerGap(533, Short.MAX_VALUE))
         );
 
         splitPane.setRightComponent(jPanel2);
@@ -177,8 +178,7 @@ public class MainJFrame extends javax.swing.JFrame {
 
     private void btnSystemAdminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSystemAdminActionPerformed
         // TODO add your handling code here:
-        person.addNewPerson("systemAdmin", "systemAdmin", "system admin", "System Admin", 20, "Female", "Huntington Ave", "Boston", "NoPhysicianType", "NoHospitalName");
-        
+         
         LoginJPanel login = new LoginJPanel();
         splitPane.setRightComponent(login);
     }//GEN-LAST:event_btnSystemAdminActionPerformed
@@ -236,6 +236,12 @@ public class MainJFrame extends javax.swing.JFrame {
 //            }
 //        });
 //    }
+    
+    public  void createsystemadmin()
+    {
+         person.addNewPerson("systemAdmin", "systemAdmin", "system admin", "System Admin", 20, "Female", "123","Jvue", "Boston", "NoPhysicianType", "NoHospitalName");
+      
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnCommunityAdmin;

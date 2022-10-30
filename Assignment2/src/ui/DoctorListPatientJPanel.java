@@ -54,7 +54,7 @@ public class DoctorListPatientJPanel extends javax.swing.JPanel {
                 {null, null, null, null, null, null}
             },
             new String [] {
-                "Name", "Gender", "PhysicianType", "House", "City", "HospitalName"
+                "Name", "Gender", "PhysicianType", "House", "Community", "HospitalName"
             }
         ) {
             boolean[] canEdit = new boolean [] {
@@ -102,11 +102,11 @@ public class DoctorListPatientJPanel extends javax.swing.JPanel {
         Doctor selectedDoctor = (Doctor) model.getValueAt(selectedRowIndex, 0);
         System.out.println("Doctor List Patient JPanel   "+selectedDoctor);
              
-        doc.patientAddDoctors(selectedDoctor.getName(), selectedDoctor.getGender(), selectedDoctor.getPhysicianType(), selectedDoctor.getHouse(), selectedDoctor.getCity(), selectedDoctor.getHospitalName());
+        doc.patientAddDoctors(selectedDoctor.getName(), selectedDoctor.getGender(), selectedDoctor.getPhysicianType(), selectedDoctor.getHouse(),selectedDoctor.getCommunity(), selectedDoctor.getCity(), selectedDoctor.getHospitalName());
         pa.appointment.add(new PatientAppointment(lp.getPaname(),selectedDoctor.getName(),lp.getPacity(),lp.getPaAge()));
         for(PatientAppointment temp:appointment)
         {
-            System.out.println(temp.getAge()+temp.getCity()+temp.getDoctorName()+temp.getAge());
+            System.out.println(temp.getAge()+temp.getCommunity()+temp.getDoctorName()+temp.getAge());
         }
         JOptionPane.showMessageDialog(this, "Appointment booked for this doctor");
         
@@ -129,14 +129,14 @@ public class DoctorListPatientJPanel extends javax.swing.JPanel {
         model.setRowCount(0);
         
         for(Doctor doc: Doctor.getDoctorDirectory()){
-            if(doc.getCity().equals(lp.getPacity()))
+            if(doc.getCommunity().equals(lp.getPacommunity()))
             {
             Object[] row = new Object[6];
             row[0] = doc;
             row[1] = doc.getGender();
             row[2] = doc.getPhysicianType();
             row[3] = doc.getHouse();
-            row[4] = doc.getCity();
+            row[4] = doc.getCommunity();
             row[5] = doc.getHospitalName();
             model.addRow(row);
             }

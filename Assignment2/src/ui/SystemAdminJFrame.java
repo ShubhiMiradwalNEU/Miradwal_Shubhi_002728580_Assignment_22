@@ -151,14 +151,14 @@ public class SystemAdminJFrame extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(268, 268, 268)
                 .addComponent(jLabel1)
-                .addContainerGap(347, Short.MAX_VALUE))
+                .addContainerGap(353, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(24, 24, 24)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(950, Short.MAX_VALUE))
+                .addContainerGap(613, Short.MAX_VALUE))
         );
 
         splitPane.setRightComponent(jPanel2);
@@ -171,7 +171,7 @@ public class SystemAdminJFrame extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(splitPane)
+            .addComponent(splitPane, javax.swing.GroupLayout.DEFAULT_SIZE, 663, Short.MAX_VALUE)
         );
 
         pack();

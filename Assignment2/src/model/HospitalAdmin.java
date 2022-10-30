@@ -16,15 +16,22 @@ public class HospitalAdmin {
     String gender;
     String hospitalName;
     String city;
+    String community;
     static public List<HospitalAdmin> hospitalDirectory= new ArrayList<HospitalAdmin>();
+    static public List<String>hospitalnamedirectory= new ArrayList<>();
 
     public HospitalAdmin(){
     }
+
+    public HospitalAdmin(String hospitalName) {
+        this.hospitalName = hospitalName;
+    }
     
-    public HospitalAdmin(String name, String gender, String hospitalName, String city) {
+    public HospitalAdmin(String name, String gender, String hospitalName,String community, String city) {
         this.name = name;
         this.gender = gender;
         this.hospitalName = hospitalName;
+        this.community=community;
         this.city = city;       
     }
 
@@ -66,6 +73,14 @@ public class HospitalAdmin {
         this.city = city;
     }
 
+    public String getCommunity() {
+        return community;
+    }
+
+    public void setCommunity(String community) {
+        this.community = community;
+    }
+
     public static List<HospitalAdmin> getHospitalDirectory() {
         return hospitalDirectory;
     }
@@ -74,10 +89,10 @@ public class HospitalAdmin {
         HospitalAdmin.hospitalDirectory = hospitalDirectory;
     }
     
-    public void  addNewHospitalAdmin(String name, String gender, String hospitalName, String city) 
+    public void  addNewHospitalAdmin(String name, String gender, String hospitalName,String community, String city) 
     {
         
-        hospitalDirectory.add(new HospitalAdmin(name, gender, hospitalName, city));
+        hospitalDirectory.add(new HospitalAdmin(name, gender, hospitalName,community, city));
         for(HospitalAdmin ha:hospitalDirectory){
             System.out.println(ha.name+ha.hospitalName);
             System.out.println(getHospitalDirectory());
