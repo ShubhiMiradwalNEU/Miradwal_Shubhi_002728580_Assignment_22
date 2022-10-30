@@ -4,6 +4,7 @@
  */
 package ui;
 
+import java.util.UUID;
 import model.Person;
 
 /**
@@ -237,10 +238,11 @@ public class MainJFrame extends javax.swing.JFrame {
 //        });
 //    }
     
-    public  void createsystemadmin()
+    public void createsystemadmin()
     {
-         person.addNewPerson("systemAdmin", "systemAdmin", "system admin", "System Admin", 20, "Female", "123","Jvue", "Boston", "NoPhysicianType", "NoHospitalName");
-      
+        String uuid = UUID.randomUUID().toString();
+         person.addNewPerson(uuid,"systemAdmin", "systemAdmin", "system admin", "System Admin", 20, "Female", "123","Jvue", "Boston", "NoPhysicianType", "NoHospitalName");
+      System.out.println(uuid);
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

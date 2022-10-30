@@ -4,6 +4,7 @@
  */
 package ui;
 
+import java.util.UUID;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JOptionPane;
 import static model.CommunityAdmin.communitydirectory;
@@ -117,8 +118,9 @@ public class AddPAJPanel extends javax.swing.JPanel {
         String username = name;
         String password = name;
         String usertype = "patient";
+        String uuid = UUID.randomUUID().toString();
         System.out.println("=======CreatePatientrJPanel================="+username+"=="+password+"=="+usertype);
-        person.addNewPerson(username, password, usertype, name, age, gender, house,community, city, "NoPhysicianType", "NoHospitalName");
+        person.addNewPerson(uuid,username, password, usertype, name, age, gender, house,community, city, "NoPhysicianType", "NoHospitalName");
         for(Person per: Person.getPersonDirectory()){
             System.out.println("Person name- "+per.getName()+"Person password- "+per.getPassword()+"Person city- "+per.getCity()+"Person usertype- "+per.getUserType());
         }

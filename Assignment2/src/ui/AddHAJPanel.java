@@ -5,6 +5,7 @@
 package ui;
 
 import static java.awt.image.ImageObserver.ABORT;
+import java.util.UUID;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JOptionPane;
 import static model.CommunityAdmin.communitydirectory;
@@ -193,7 +194,8 @@ public class AddHAJPanel extends javax.swing.JPanel {
         String password = name;
         String usertype = "hospital admin";
         System.out.println("=======CreateHospitalAdminJPanel================="+username+"=="+password+"=="+usertype);
-        personDirectory.add(new Person(username, password, usertype, name, 0, gender, "NoHouse",community, city, "NoPhysicianType", hospitalName));
+          String uuid = UUID.randomUUID().toString();
+        personDirectory.add(new Person(uuid,username, password, usertype, name, 0, gender, "NoHouse",community, city, "NoPhysicianType", hospitalName));
         for(Person per: Person.getPersonDirectory()){
             System.out.println(per.getName()+per.getPassword()+per.getCity());
         }

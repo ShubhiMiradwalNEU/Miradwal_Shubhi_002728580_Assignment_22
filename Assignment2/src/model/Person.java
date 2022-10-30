@@ -6,6 +6,7 @@ package model;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 
 /**
  *
@@ -13,6 +14,9 @@ import java.util.List;
  */
 
 public class Person {
+    String ID;
+
+    
     String userName;
     String password;
     String userType;
@@ -34,7 +38,7 @@ public class Person {
     public Person() {
     }
 
-    public Person(String userName, String password, String userType, String name, int age, String gender, String house,String community, String city, String physicianType, String hospitalName) {
+    public Person(String id,String userName, String password, String userType, String name, int age, String gender, String house,String community, String city, String physicianType, String hospitalName) {
         this.userName = userName;
         this.password = password;
         this.userType = userType;
@@ -152,11 +156,18 @@ public class Person {
     public static void setPersonDirectory(List<Person> personDirectory) {
         Person.personDirectory = personDirectory;
     }
+    public String getID() {
+        return ID;
+    }
+
+    public void setID(String ID) {
+        this.ID = ID;
+    }
     
-    
-    public void  addNewPerson(String userName, String password, String userType, String name, int age, String gender, String house,String community, String city, String physicianType, String hospitalName) 
+    public void  addNewPerson(String id,String userName, String password, String userType, String name, int age, String gender, String house,String community, String city, String physicianType, String hospitalName) 
     {
-        personDirectory.add(new Person(userName, password, userType, name, age, gender, house, community, city, physicianType, hospitalName));
+        
+        personDirectory.add(new Person(id,userName, password, userType, name, age, gender, house, community, city, physicianType, hospitalName));
         System.out.println(personDirectory.size()-1);
         System.out.println("Added Successfully !!");
     }

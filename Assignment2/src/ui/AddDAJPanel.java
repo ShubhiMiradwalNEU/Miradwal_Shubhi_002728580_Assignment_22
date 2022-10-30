@@ -4,6 +4,7 @@
  */
 package ui;
 
+import java.util.UUID;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JOptionPane;
 import static model.CommunityAdmin.communitydirectory;
@@ -137,8 +138,9 @@ public class AddDAJPanel extends javax.swing.JPanel {
         String username = name;
         String password = name;
         String usertype = "doctor";
+        String uuid = UUID.randomUUID().toString();
         System.out.println("=======CreateDoctorJPanel================="+username+"=="+password+"=="+usertype);
-        person.addNewPerson(username, password, usertype, name, ABORT, gender, house,community, city, physicianType, hospitalName);
+        person.addNewPerson(uuid,username, password, usertype, name, ABORT, gender, house,community, city, physicianType, hospitalName);
         for(Person per: Person.getPersonDirectory()){
             System.out.println(per.getName()+per.getPassword()+per.getCity());
         }

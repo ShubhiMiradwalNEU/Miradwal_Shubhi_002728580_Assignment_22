@@ -4,6 +4,7 @@
  */
 package ui;
 
+import java.util.UUID;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JOptionPane;
 import model.CommunityAdmin;
@@ -155,7 +156,8 @@ public class AddCAJPanel extends javax.swing.JPanel {
         String password = name;
         String usertype = "community admin";
         System.out.println("=======CreateCommunityAdminJPanel================="+username+"=="+password+"=="+usertype);
-        person.addNewPerson(username, password, usertype, name, ABORT, gender, house, community,city, "NoPhysicianType", "NoHospitalName");
+        String uuid = UUID.randomUUID().toString();
+        person.addNewPerson(uuid,username, password, usertype, name, ABORT, gender, house, community,city, "NoPhysicianType", "NoHospitalName");
         cb.addNewCommunityAdmin(name, gender, house,community, city);
         communitydirectory.add(community);
         
