@@ -9,5 +9,6 @@ Sequence Diagram CommunityAdmin
 ![sequencediagramcommunityadmin](https://user-images.githubusercontent.com/114192364/198925870-175fd030-d511-4f65-a125-702857945f37.png)
 
 
+Sequence diagram doctor
 
-
+![Sequencediagramdoctor](https://user-images.githubusercontent.com/114192364/198926222-cffd8680-ed68-4382-aff5-ad64578f7411.jpeg)
