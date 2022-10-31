@@ -51,31 +51,32 @@ public class AddPAJPanel extends javax.swing.JPanel {
         comboBoxCommunity = new javax.swing.JComboBox<>();
 
         setBackground(new java.awt.Color(204, 255, 255));
+        setPreferredSize(new java.awt.Dimension(1000, 650));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lblHouse.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
         lblHouse.setForeground(new java.awt.Color(0, 51, 51));
         lblHouse.setText("HOUSE");
-        add(lblHouse, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 220, 157, 23));
-        add(txtHouse, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 220, 157, -1));
+        add(lblHouse, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 250, 157, 23));
+        add(txtHouse, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 250, 157, -1));
 
         lblCity.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
         lblCity.setForeground(new java.awt.Color(0, 51, 51));
-        lblCity.setText("CITY");
-        add(lblCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 290, 157, 23));
-        add(txtCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 290, 157, -1));
+        lblCity.setText("   CITY");
+        add(lblCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 320, 157, 23));
+        add(txtCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 320, 157, -1));
 
         lblAge.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
         lblAge.setForeground(new java.awt.Color(0, 51, 51));
         lblAge.setText("AGE");
-        add(lblAge, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 130, 157, 23));
+        add(lblAge, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 160, 157, 23));
 
         lblName.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
         lblName.setForeground(new java.awt.Color(0, 51, 51));
         lblName.setText("NAME");
-        add(lblName, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 90, 157, 23));
-        add(txtAge, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 130, 157, -1));
-        add(txtName, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 90, 157, -1));
+        add(lblName, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 120, 157, 23));
+        add(txtAge, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 160, 157, -1));
+        add(txtName, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 120, 157, -1));
 
         btnSave.setBackground(new java.awt.Color(0, 0, 0));
         btnSave.setForeground(new java.awt.Color(255, 255, 255));
@@ -85,22 +86,22 @@ public class AddPAJPanel extends javax.swing.JPanel {
                 btnSaveActionPerformed(evt);
             }
         });
-        add(btnSave, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 340, 120, 40));
+        add(btnSave, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 380, 120, 40));
 
         lblGender.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
         lblGender.setForeground(new java.awt.Color(0, 51, 51));
         lblGender.setText("GENDER");
-        add(lblGender, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 170, 157, 23));
+        add(lblGender, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 200, 157, 23));
 
         comboBoxGender.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Female", "Male" }));
-        add(comboBoxGender, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 170, 157, -1));
+        add(comboBoxGender, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 200, 157, -1));
 
         lblcommunity.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
-        lblcommunity.setText("Community");
-        add(lblcommunity, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 260, 80, 20));
+        lblcommunity.setText("  Community");
+        add(lblcommunity, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 290, 80, 20));
 
         comboBoxCommunity.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        add(comboBoxCommunity, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 260, 150, 20));
+        add(comboBoxCommunity, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 290, 150, 20));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaveActionPerformed

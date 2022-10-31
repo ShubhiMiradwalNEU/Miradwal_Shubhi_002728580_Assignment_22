@@ -39,6 +39,7 @@ public class DoctorListHospitalAdminJPanel extends javax.swing.JPanel {
         jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(204, 255, 255));
+        setPreferredSize(new java.awt.Dimension(1000, 650));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         tblDoctor.setModel(new javax.swing.table.DefaultTableModel(
@@ -67,7 +68,7 @@ public class DoctorListHospitalAdminJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(tblDoctor);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 90, 730, 240));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 90, 1000, 260));
 
         jLabel1.setFont(new java.awt.Font("Academy Engraved LET", 1, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 102, 102));

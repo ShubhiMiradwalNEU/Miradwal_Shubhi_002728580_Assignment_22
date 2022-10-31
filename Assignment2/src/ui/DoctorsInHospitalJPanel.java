@@ -42,6 +42,7 @@ public class DoctorsInHospitalJPanel extends javax.swing.JPanel {
         deletedocbtn = new javax.swing.JButton();
 
         setBackground(new java.awt.Color(204, 255, 255));
+        setPreferredSize(new java.awt.Dimension(1000, 650));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         tblAddDoctors.setModel(new javax.swing.table.DefaultTableModel(
@@ -75,7 +76,7 @@ public class DoctorsInHospitalJPanel extends javax.swing.JPanel {
         jLabel1.setFont(new java.awt.Font("Academy Engraved LET", 1, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 102, 102));
         jLabel1.setText("DOCTOR IN HOSPITAL");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 10, 230, 30));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 10, 230, 30));
 
         deletedocbtn.setBackground(new java.awt.Color(0, 0, 0));
         deletedocbtn.setForeground(new java.awt.Color(255, 255, 255));
@@ -85,7 +86,7 @@ public class DoctorsInHospitalJPanel extends javax.swing.JPanel {
                 deletedocbtnActionPerformed(evt);
             }
         });
-        add(deletedocbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 450, 100, 30));
+        add(deletedocbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 440, 100, 30));
     }// </editor-fold>//GEN-END:initComponents
 
     private void tblAddDoctorsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tblAddDoctorsMouseClicked

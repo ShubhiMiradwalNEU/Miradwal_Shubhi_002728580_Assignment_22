@@ -56,6 +56,7 @@ public class AddHAJPanel extends javax.swing.JPanel {
         comboBoxCommunity = new javax.swing.JComboBox<>();
 
         setBackground(new java.awt.Color(204, 255, 255));
+        setPreferredSize(new java.awt.Dimension(1000, 650));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(204, 255, 255));

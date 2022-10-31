@@ -56,10 +56,12 @@ public class ShowDAJPanel extends javax.swing.JPanel {
         txtHospitalName = new javax.swing.JTextField();
         comboBoxCommunity = new javax.swing.JComboBox<>();
 
-        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        setPreferredSize(new java.awt.Dimension(1000, 650));
 
         jPanel1.setBackground(new java.awt.Color(204, 255, 255));
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jPanel1.setPreferredSize(new java.awt.Dimension(1000, 650));
+
+        jScrollPane1.setPreferredSize(new java.awt.Dimension(1000, 650));
 
         tblDoctor.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -88,30 +90,23 @@ public class ShowDAJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(tblDoctor);
 
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(4, 7, 1010, 140));
-
         lblName.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
         lblName.setForeground(new java.awt.Color(0, 102, 102));
         lblName.setText("NAME");
-        jPanel1.add(lblName, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 180, 114, -1));
-        jPanel1.add(txtName, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 180, 106, -1));
 
         lblGender.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
         lblGender.setForeground(new java.awt.Color(0, 102, 102));
         lblGender.setText("GENDER");
-        jPanel1.add(lblGender, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 230, -1, -1));
 
         lblHouse.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
         lblHouse.setForeground(new java.awt.Color(0, 102, 102));
         lblHouse.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblHouse.setText("HOUSE");
-        jPanel1.add(lblHouse, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 320, -1, -1));
 
         lblCity.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
         lblCity.setForeground(new java.awt.Color(0, 102, 102));
         lblCity.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblCity.setText("Community");
-        jPanel1.add(lblCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 370, -1, -1));
 
         btnUpdate.setBackground(new java.awt.Color(0, 0, 0));
         btnUpdate.setForeground(new java.awt.Color(255, 255, 255));
@@ -121,7 +116,6 @@ public class ShowDAJPanel extends javax.swing.JPanel {
                 btnUpdateActionPerformed(evt);
             }
         });
-        jPanel1.add(btnUpdate, new org.netbeans.lib.awtextra.AbsoluteConstraints(404, 153, -1, -1));
 
         btnDelete.setBackground(new java.awt.Color(0, 0, 0));
         btnDelete.setForeground(new java.awt.Color(255, 255, 255));
@@ -131,29 +125,116 @@ public class ShowDAJPanel extends javax.swing.JPanel {
                 btnDeleteActionPerformed(evt);
             }
         });
-        jPanel1.add(btnDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(525, 153, -1, -1));
 
         comboGender.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Female", "Male" }));
-        jPanel1.add(comboGender, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 220, 106, -1));
 
         lblPhysicianType.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
         lblPhysicianType.setForeground(new java.awt.Color(0, 102, 102));
         lblPhysicianType.setText("PHYSICIAN TYPE");
-        jPanel1.add(lblPhysicianType, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 270, -1, -1));
-        jPanel1.add(txtPhysicianType, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 260, 106, -1));
-        jPanel1.add(txtHouse, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 310, 106, -1));
 
         lblHospitalName.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
         lblHospitalName.setForeground(new java.awt.Color(0, 102, 102));
         lblHospitalName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblHospitalName.setText("HOSPITAL NAME");
-        jPanel1.add(lblHospitalName, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 420, -1, -1));
-        jPanel1.add(txtHospitalName, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 420, 106, -1));
 
         comboBoxCommunity.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        jPanel1.add(comboBoxCommunity, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 360, 100, 30));
 
-        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1020, 500));
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(4, 4, 4)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 1010, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(404, 404, 404)
+                .addComponent(btnUpdate)
+                .addGap(48, 48, 48)
+                .addComponent(btnDelete))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addComponent(lblName, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(26, 26, 26)
+                .addComponent(txtName, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addComponent(lblGender)
+                .addGap(78, 78, 78)
+                .addComponent(comboGender, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addComponent(lblPhysicianType)
+                .addGap(18, 18, 18)
+                .addComponent(txtPhysicianType, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addComponent(lblHouse)
+                .addGap(91, 91, 91)
+                .addComponent(txtHouse, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addComponent(lblCity)
+                .addGap(70, 70, 70)
+                .addComponent(comboBoxCommunity, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addComponent(lblHospitalName)
+                .addGap(17, 17, 17)
+                .addComponent(txtHospitalName, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(7, 7, 7)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(6, 6, 6)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnUpdate)
+                    .addComponent(btnDelete))
+                .addGap(4, 4, 4)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblName)
+                    .addComponent(txtName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(17, 17, 17)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addComponent(lblGender))
+                    .addComponent(comboGender, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(13, 13, 13)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addComponent(lblPhysicianType))
+                    .addComponent(txtPhysicianType, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(23, 23, 23)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addComponent(lblHouse))
+                    .addComponent(txtHouse, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(23, 23, 23)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addComponent(lblCity))
+                    .addComponent(comboBoxCommunity, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(30, 30, 30)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblHospitalName)
+                    .addComponent(txtHospitalName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+        );
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
+        this.setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
     }// </editor-fold>//GEN-END:initComponents
 
     private void tblDoctorMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tblDoctorMouseClicked

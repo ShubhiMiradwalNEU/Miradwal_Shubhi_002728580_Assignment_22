@@ -54,7 +54,7 @@ public class ShowPAJPanel extends javax.swing.JPanel {
         ComboboxCommunity = new javax.swing.JComboBox<>();
 
         setBackground(new java.awt.Color(204, 255, 255));
-        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        setPreferredSize(new java.awt.Dimension(1000, 650));
 
         tblPatient.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -82,40 +82,29 @@ public class ShowPAJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(tblPatient);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 46, 908, 106));
-
         lblName.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
         lblName.setText("NAME");
-        add(lblName, new org.netbeans.lib.awtextra.AbsoluteConstraints(39, 183, 114, -1));
 
         txtName.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
-        add(txtName, new org.netbeans.lib.awtextra.AbsoluteConstraints(171, 180, 106, -1));
 
         lblGender.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
         lblGender.setText("GENDER");
-        add(lblGender, new org.netbeans.lib.awtextra.AbsoluteConstraints(39, 269, 114, -1));
 
         comboGender.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
         comboGender.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Female", "Male" }));
-        add(comboGender, new org.netbeans.lib.awtextra.AbsoluteConstraints(171, 266, 106, -1));
 
         lblAge.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
         lblAge.setText("AGE");
-        add(lblAge, new org.netbeans.lib.awtextra.AbsoluteConstraints(39, 230, 114, -1));
 
         lblHouse.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
         lblHouse.setText("HOUSE");
-        add(lblHouse, new org.netbeans.lib.awtextra.AbsoluteConstraints(39, 318, 114, -1));
 
         lblCity.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
         lblCity.setText("Community");
-        add(lblCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(39, 359, 114, -1));
 
         txtHouse.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
-        add(txtHouse, new org.netbeans.lib.awtextra.AbsoluteConstraints(171, 315, 106, -1));
 
         txtAge.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
-        add(txtAge, new org.netbeans.lib.awtextra.AbsoluteConstraints(171, 224, 106, -1));
 
         btnUpdate.setBackground(new java.awt.Color(0, 0, 0));
         btnUpdate.setForeground(new java.awt.Color(255, 255, 255));
@@ -125,7 +114,6 @@ public class ShowPAJPanel extends javax.swing.JPanel {
                 btnUpdateActionPerformed(evt);
             }
         });
-        add(btnUpdate, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 180, 120, 30));
 
         btnDelete.setBackground(new java.awt.Color(0, 0, 0));
         btnDelete.setForeground(new java.awt.Color(255, 255, 255));
@@ -135,10 +123,88 @@ public class ShowPAJPanel extends javax.swing.JPanel {
                 btnDeleteActionPerformed(evt);
             }
         });
-        add(btnDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 180, 130, 30));
 
         ComboboxCommunity.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        add(ComboboxCommunity, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 360, 110, 30));
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
+        this.setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(45, 45, 45)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(1, 1, 1)
+                                .addComponent(lblName, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(txtName, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(3, 3, 3))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(1, 1, 1)
+                                .addComponent(lblAge, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(txtAge, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(1, 1, 1)
+                                .addComponent(lblGender, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(comboGender, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(1, 1, 1)
+                                .addComponent(lblHouse, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(txtHouse, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(lblCity, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(ComboboxCommunity, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(429, 429, 429)
+                        .addComponent(btnUpdate, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(80, 80, 80)
+                        .addComponent(btnDelete, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(241, Short.MAX_VALUE))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(46, 46, 46)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(71, 71, 71)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnUpdate, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnDelete, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(4, 4, 4)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(3, 3, 3)
+                        .addComponent(lblName))
+                    .addComponent(txtName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(20, 20, 20)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(6, 6, 6)
+                        .addComponent(lblAge))
+                    .addComponent(txtAge, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(22, 22, 22)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(comboGender, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblGender))
+                .addGap(23, 23, 23)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(3, 3, 3)
+                        .addComponent(lblHouse))
+                    .addComponent(txtHouse, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(ComboboxCommunity, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblCity))
+                .addContainerGap())
+        );
     }// </editor-fold>//GEN-END:initComponents
 
     private void tblPatientMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tblPatientMouseClicked

@@ -36,6 +36,8 @@ public class EncounterHistoryPAJPanel extends javax.swing.JPanel {
         tblPatientEncounterHistory = new javax.swing.JTable();
 
         setBackground(new java.awt.Color(204, 255, 255));
+        setMinimumSize(new java.awt.Dimension(1000, 650));
+        setPreferredSize(new java.awt.Dimension(1000, 650));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         tblPatientEncounterHistory.setModel(new javax.swing.table.DefaultTableModel(

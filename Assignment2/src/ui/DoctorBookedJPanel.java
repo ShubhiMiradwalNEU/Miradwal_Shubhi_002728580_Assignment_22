@@ -35,6 +35,7 @@ public class DoctorBookedJPanel extends javax.swing.JPanel {
         jLabel1 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(204, 255, 255));
+        setPreferredSize(new java.awt.Dimension(1000, 650));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         tblEncounterHistory.setModel(new javax.swing.table.DefaultTableModel(
@@ -58,11 +59,12 @@ public class DoctorBookedJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(tblEncounterHistory);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 99, 631, 255));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 99, 990, 260));
 
+        jLabel1.setFont(new java.awt.Font("Academy Engraved LET", 1, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 102, 102));
         jLabel1.setText("Appointment");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(293, 38, 129, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 40, 129, -1));
     }// </editor-fold>//GEN-END:initComponents
 
 

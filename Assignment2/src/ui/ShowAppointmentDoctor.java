@@ -119,14 +119,16 @@ public class ShowAppointmentDoctor extends javax.swing.JPanel {
         txtPatientName.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
         add(txtPatientName, new org.netbeans.lib.awtextra.AbsoluteConstraints(454, 187, 217, 32));
 
+        btnPatientsubmit.setBackground(new java.awt.Color(0, 0, 0));
         btnPatientsubmit.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
+        btnPatientsubmit.setForeground(new java.awt.Color(255, 255, 255));
         btnPatientsubmit.setText("Submit");
         btnPatientsubmit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnPatientsubmitActionPerformed(evt);
             }
         });
-        add(btnPatientsubmit, new org.netbeans.lib.awtextra.AbsoluteConstraints(371, 443, -1, -1));
+        add(btnPatientsubmit, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 430, 140, 40));
     }// </editor-fold>//GEN-END:initComponents
 
     private void tblappointmentdoctorMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tblappointmentdoctorMouseClicked

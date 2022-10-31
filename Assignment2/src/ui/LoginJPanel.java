@@ -103,7 +103,7 @@ public class LoginJPanel extends javax.swing.JPanel {
         btnLogin = new javax.swing.JButton();
 
         setBackground(new java.awt.Color(204, 255, 255));
-        setPreferredSize(new java.awt.Dimension(900, 900));
+        setPreferredSize(new java.awt.Dimension(1000, 650));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lblUsername.setBackground(new java.awt.Color(0, 0, 0));
@@ -192,9 +192,9 @@ public class LoginJPanel extends javax.swing.JPanel {
                     
                 }
             }
-            else{
-                JOptionPane.showMessageDialog(this, "Invalid Username or Password");
-            }
+//            else{
+//                JOptionPane.showMessageDialog(this, "Invalid Username or Password");
+//            }
     }
     }//GEN-LAST:event_btnLoginActionPerformed
  

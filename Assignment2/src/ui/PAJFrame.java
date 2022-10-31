@@ -33,17 +33,36 @@ public class PAJFrame extends javax.swing.JFrame {
     private void initComponents() {
 
         splitPane = new javax.swing.JSplitPane();
+        jPanel2 = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
         btnDoctorList = new javax.swing.JButton();
         btnDoctorBooked = new javax.swing.JButton();
         btnBack = new javax.swing.JButton();
         btnEncounterHistory = new javax.swing.JButton();
-        jPanel2 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(650, 600));
+
+        splitPane.setPreferredSize(new java.awt.Dimension(1000, 650));
+
+        jPanel2.setBackground(new java.awt.Color(204, 255, 255));
+        jPanel2.setPreferredSize(new java.awt.Dimension(900, 650));
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 857, Short.MAX_VALUE)
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 608, Short.MAX_VALUE)
+        );
+
+        splitPane.setRightComponent(jPanel2);
 
         jPanel1.setBackground(new java.awt.Color(153, 255, 255));
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jPanel1.setPreferredSize(new java.awt.Dimension(138, 650));
 
         btnDoctorList.setBackground(new java.awt.Color(0, 0, 0));
         btnDoctorList.setForeground(new java.awt.Color(255, 255, 255));
@@ -53,7 +72,6 @@ public class PAJFrame extends javax.swing.JFrame {
                 btnDoctorListActionPerformed(evt);
             }
         });
-        jPanel1.add(btnDoctorList, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 46, 138, -1));
 
         btnDoctorBooked.setBackground(new java.awt.Color(0, 0, 0));
         btnDoctorBooked.setForeground(new java.awt.Color(255, 255, 255));
@@ -63,7 +81,6 @@ public class PAJFrame extends javax.swing.JFrame {
                 btnDoctorBookedActionPerformed(evt);
             }
         });
-        jPanel1.add(btnDoctorBooked, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 103, 138, -1));
 
         btnBack.setBackground(new java.awt.Color(0, 0, 0));
         btnBack.setForeground(new java.awt.Color(255, 255, 255));
@@ -73,7 +90,6 @@ public class PAJFrame extends javax.swing.JFrame {
                 btnBackActionPerformed(evt);
             }
         });
-        jPanel1.add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 302, 61, -1));
 
         btnEncounterHistory.setBackground(new java.awt.Color(0, 0, 0));
         btnEncounterHistory.setForeground(new java.awt.Color(255, 255, 255));
@@ -83,28 +99,46 @@ public class PAJFrame extends javax.swing.JFrame {
                 btnEncounterHistoryActionPerformed(evt);
             }
         });
-        jPanel1.add(btnEncounterHistory, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 160, 138, -1));
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(btnDoctorList, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(btnDoctorBooked, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(btnEncounterHistory, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(6, 6, 6)
+                .addComponent(btnBack, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(39, 39, 39)
+                .addComponent(btnDoctorList)
+                .addGap(35, 35, 35)
+                .addComponent(btnDoctorBooked)
+                .addGap(34, 34, 34)
+                .addComponent(btnEncounterHistory)
+                .addGap(103, 103, 103)
+                .addComponent(btnBack))
+        );
 
         splitPane.setLeftComponent(jPanel1);
-
-        jPanel2.setBackground(new java.awt.Color(204, 255, 255));
-        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        splitPane.setRightComponent(jPanel2);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(splitPane, javax.swing.GroupLayout.PREFERRED_SIZE, 710, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(0, 99, Short.MAX_VALUE)
+                .addComponent(splitPane, javax.swing.GroupLayout.PREFERRED_SIZE, 710, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+            .addGroup(layout.createSequentialGroup()
                 .addComponent(splitPane, javax.swing.GroupLayout.PREFERRED_SIZE, 371, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addContainerGap(50, Short.MAX_VALUE))
         );
 
         pack();

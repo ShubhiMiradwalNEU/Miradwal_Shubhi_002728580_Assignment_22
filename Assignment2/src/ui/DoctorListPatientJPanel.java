@@ -44,7 +44,7 @@ public class DoctorListPatientJPanel extends javax.swing.JPanel {
         btnBookDoctor = new javax.swing.JButton();
 
         setBackground(new java.awt.Color(204, 255, 255));
-        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        setPreferredSize(new java.awt.Dimension(1000, 650));
 
         tblDoctor.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -72,12 +72,9 @@ public class DoctorListPatientJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(tblDoctor);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(5, 70, 740, 199));
-
         jLabel1.setBackground(new java.awt.Color(0, 102, 102));
         jLabel1.setFont(new java.awt.Font("Academy Engraved LET", 1, 18)); // NOI18N
         jLabel1.setText("Book Doctor Appointment");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(283, 8, 230, 30));
 
         btnBookDoctor.setBackground(new java.awt.Color(0, 0, 0));
         btnBookDoctor.setForeground(new java.awt.Color(255, 255, 255));
@@ -87,7 +84,35 @@ public class DoctorListPatientJPanel extends javax.swing.JPanel {
                 btnBookDoctorActionPerformed(evt);
             }
         });
-        add(btnBookDoctor, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 300, -1, -1));
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
+        this.setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(5, 5, 5)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 1000, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(374, 374, 374))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(btnBookDoctor, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(392, 392, 392))))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(22, 22, 22)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(31, 31, 31)
+                .addComponent(btnBookDoctor, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
     }// </editor-fold>//GEN-END:initComponents
 
     private void tblDoctorMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tblDoctorMouseClicked

@@ -30,11 +30,15 @@ public class CAJFrame extends javax.swing.JFrame {
         btnCreateHospitalAdmin = new javax.swing.JButton();
         btnViewHospitalAdmin = new javax.swing.JButton();
         btnBack = new javax.swing.JButton();
+        ViewPerson = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         lblTitle = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(1000, 650));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        splitPane.setPreferredSize(new java.awt.Dimension(1000, 650));
 
         jPanel1.setBackground(new java.awt.Color(153, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -67,6 +71,16 @@ public class CAJFrame extends javax.swing.JFrame {
         });
         jPanel1.add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(15, 445, -1, -1));
 
+        ViewPerson.setBackground(new java.awt.Color(0, 0, 0));
+        ViewPerson.setForeground(new java.awt.Color(255, 255, 255));
+        ViewPerson.setText("View Person");
+        ViewPerson.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ViewPersonActionPerformed(evt);
+            }
+        });
+        jPanel1.add(ViewPerson, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 270, 140, 30));
+
         splitPane.setLeftComponent(jPanel1);
 
         jPanel2.setBackground(new java.awt.Color(153, 255, 255));
@@ -89,7 +103,7 @@ public class CAJFrame extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(21, 21, 21)
                 .addComponent(lblTitle)
-                .addContainerGap(457, Short.MAX_VALUE))
+                .addContainerGap(425, Short.MAX_VALUE))
         );
 
         splitPane.setRightComponent(jPanel2);
@@ -118,6 +132,13 @@ public class CAJFrame extends javax.swing.JFrame {
         CAJFrame commAdmin = new CAJFrame();
         commAdmin.setVisible(false);
     }//GEN-LAST:event_btnBackActionPerformed
+
+    private void ViewPersonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ViewPersonActionPerformed
+        // TODO add your handling code here:
+          PersonJPanel viewpersonJPanel = new PersonJPanel();
+        splitPane.setRightComponent(viewpersonJPanel);
+        
+    }//GEN-LAST:event_ViewPersonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -156,6 +177,7 @@ public class CAJFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton ViewPerson;
     private javax.swing.JButton btnBack;
     private javax.swing.JButton btnCreateHospitalAdmin;
     private javax.swing.JButton btnViewHospitalAdmin;

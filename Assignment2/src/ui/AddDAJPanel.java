@@ -50,50 +50,52 @@ public class AddDAJPanel extends javax.swing.JPanel {
         txtHospitalName = new javax.swing.JTextField();
         lblcommunity = new javax.swing.JLabel();
         comboBoxCommunity = new javax.swing.JComboBox<>();
+        lblTitle = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(204, 255, 255));
+        setPreferredSize(new java.awt.Dimension(1000, 650));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lblName.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
         lblName.setForeground(new java.awt.Color(0, 51, 51));
         lblName.setText("NAME");
-        add(lblName, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 180, 111, -1));
+        add(lblName, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 160, 111, -1));
 
         txtName.setFont(new java.awt.Font("Centaur", 0, 14)); // NOI18N
-        add(txtName, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 180, 137, -1));
+        add(txtName, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 160, 137, -1));
 
         lblGender.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
         lblGender.setForeground(new java.awt.Color(0, 51, 51));
         lblGender.setText("GENDER");
-        add(lblGender, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 220, 111, -1));
+        add(lblGender, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 200, 111, -1));
 
         comboBoxGender.setFont(new java.awt.Font("Centaur", 0, 14)); // NOI18N
         comboBoxGender.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Female", "Male" }));
-        add(comboBoxGender, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 210, 137, -1));
+        add(comboBoxGender, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 190, 137, -1));
 
         lblHouse.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
         lblHouse.setForeground(new java.awt.Color(0, 51, 51));
         lblHouse.setText("HOUSE");
-        add(lblHouse, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 300, 111, -1));
+        add(lblHouse, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 280, 111, -1));
 
         txtHouse.setFont(new java.awt.Font("Centaur", 0, 14)); // NOI18N
-        add(txtHouse, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 290, 137, -1));
+        add(txtHouse, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 270, 137, -1));
 
         lblCity.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
         lblCity.setForeground(new java.awt.Color(0, 51, 51));
         lblCity.setText("CITY");
-        add(lblCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 370, 111, -1));
+        add(lblCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 350, 111, -1));
 
         txtCity.setFont(new java.awt.Font("Centaur", 0, 14)); // NOI18N
-        add(txtCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 370, 137, -1));
+        add(txtCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 350, 137, -1));
 
         lblPhysicianType.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
         lblPhysicianType.setForeground(new java.awt.Color(0, 102, 102));
         lblPhysicianType.setText("PHYSICIAN TYPE");
-        add(lblPhysicianType, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 260, -1, -1));
+        add(lblPhysicianType, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 240, -1, -1));
 
         txtPhysicianType.setFont(new java.awt.Font("Centaur", 0, 14)); // NOI18N
-        add(txtPhysicianType, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 250, 137, -1));
+        add(txtPhysicianType, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 230, 137, -1));
 
         btnSave.setBackground(new java.awt.Color(0, 0, 0));
         btnSave.setFont(new java.awt.Font("Centaur", 0, 14)); // NOI18N
@@ -104,22 +106,26 @@ public class AddDAJPanel extends javax.swing.JPanel {
                 btnSaveActionPerformed(evt);
             }
         });
-        add(btnSave, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 450, 110, 40));
+        add(btnSave, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 430, 110, 40));
 
         lblHospitalName.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
         lblHospitalName.setForeground(new java.awt.Color(0, 51, 51));
         lblHospitalName.setText("HOSPITAL NAME");
-        add(lblHospitalName, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 410, -1, -1));
+        add(lblHospitalName, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 390, -1, -1));
 
         txtHospitalName.setFont(new java.awt.Font("Centaur", 0, 14)); // NOI18N
-        add(txtHospitalName, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 400, 137, -1));
+        add(txtHospitalName, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 380, 137, -1));
 
         lblcommunity.setFont(new java.awt.Font("Academy Engraved LET", 1, 14)); // NOI18N
         lblcommunity.setText("Community");
-        add(lblcommunity, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 330, 90, 20));
+        add(lblcommunity, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 310, 90, 20));
 
         comboBoxCommunity.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        add(comboBoxCommunity, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 330, 140, 20));
+        add(comboBoxCommunity, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 310, 140, 20));
+
+        lblTitle.setFont(new java.awt.Font("Academy Engraved LET", 1, 18)); // NOI18N
+        lblTitle.setText("CREATE   DOCTOR");
+        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 60, 310, 50));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaveActionPerformed
@@ -164,6 +170,7 @@ public class AddDAJPanel extends javax.swing.JPanel {
     private javax.swing.JLabel lblHouse;
     private javax.swing.JLabel lblName;
     private javax.swing.JLabel lblPhysicianType;
+    private javax.swing.JLabel lblTitle;
     private javax.swing.JLabel lblcommunity;
     private javax.swing.JTextField txtCity;
     private javax.swing.JTextField txtHospitalName;
