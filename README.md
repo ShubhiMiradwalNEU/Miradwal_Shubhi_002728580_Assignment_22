@@ -21,8 +21,7 @@ Sequence diagram Patient
 ![Patient sequencediagram](https://user-images.githubusercontent.com/114192364/198926621-5a8d9562-329a-4e14-bfcb-76e749830d63.jpeg)
 
 Sequence diagram of System Admin
-<img width="953" alt="SystemAdminSeqdiagram" src="https://user-images.githubusercontent.com/114192364/198927725-323eeb7b-b5bb-4dc0-98ac-a077e4b32335.png">
-
+<img width="953" alt="Screen Shot 2022-10-30 at 11 52 47 PM" src="https://user-images.githubusercontent.com/114192364/198928335-42835f4f-e3fe-4c9d-8c83-d788371d43a4.png">
 
 Description:
 
