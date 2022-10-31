@@ -112,7 +112,11 @@ public class AddPAJPanel extends javax.swing.JPanel {
         String house = txtHouse.getText();
         String city = txtCity.getText();
         String community= (String)comboBoxCommunity.getSelectedItem();
-        
+        if(name.equals("")||gender.equals("")||house.equals("")||city.equals("")||community.equals(""))
+        {
+            JOptionPane.showMessageDialog(this, "Please add mandatory feild....");
+            return;
+        }
         patient.addNewPatients(name, age, gender, house,community, city);
 
         String username = name;

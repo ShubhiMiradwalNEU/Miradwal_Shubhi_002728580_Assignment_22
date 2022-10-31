@@ -148,8 +148,12 @@ public class AddCAJPanel extends javax.swing.JPanel {
         String house = txtHouse.getText();
         String community=  addcommunityadmin.getText();
         String city = txtCity.getText();
+        if(name.equals("")||gender.equals("")||house.equals("")||community.equals("")||city.equals(""))
+        {
+            JOptionPane.showMessageDialog(this, "Please add mandatory feild....");
+            return;
+        }
         
-
 //        doctor.addNewDoctors(name, gender, physicianType, house, city, hospitalName);
 
         String username = name;
@@ -165,6 +169,7 @@ public class AddCAJPanel extends javax.swing.JPanel {
 //            System.out.println(per.getName()+per.getPassword()+per.getCity());
 //        }
        JOptionPane.showMessageDialog(this, "Community admin added successfuly");
+        
 
     }//GEN-LAST:event_btnSaveActionPerformed
 

@@ -187,6 +187,11 @@ public class AddHAJPanel extends javax.swing.JPanel {
         String city=txtPatientcity.getText();
                 
          // String city = lp.getCacity();
+         if(name.equals("")||gender.equals("")||community.equals("")||city.equals("")||hospitalName.equals(""))
+        {
+            JOptionPane.showMessageDialog(this, "Please add mandatory feild....");
+            return;
+        }
         
         hospitalAdmin.addNewHospitalAdmin(name, gender, hospitalName,community, city);
         

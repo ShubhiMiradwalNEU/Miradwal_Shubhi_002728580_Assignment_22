@@ -132,7 +132,11 @@ public class AddDAJPanel extends javax.swing.JPanel {
         String community= (String) comboBoxCommunity.getSelectedItem();
         String city = txtCity.getText();
         String hospitalName = txtHospitalName.getText();
-        
+         if(name.equals("")||gender.equals("")||house.equals("")||community.equals("")||city.equals("")||hospitalName.equals("")||physicianType.equals(""))
+        {
+            JOptionPane.showMessageDialog(this, "Please add mandatory feild....");
+            return;
+        }
         doctor.addNewDoctors(name, gender, physicianType, house, community,city, hospitalName);
         
         String username = name;
@@ -145,6 +149,7 @@ public class AddDAJPanel extends javax.swing.JPanel {
             System.out.println(per.getName()+per.getPassword()+per.getCity());
         }
         JOptionPane.showMessageDialog(this, "Doctor added successfuly");
+        
         
     }//GEN-LAST:event_btnSaveActionPerformed
 

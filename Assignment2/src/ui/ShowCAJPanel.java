@@ -193,7 +193,12 @@ Person per= new Person();
             //String physicianType = txtPhysicianType.getText();
             String house = txtCommunityAdminhouse.getText();          
             String city = (String) comboBoxCommunity.getSelectedItem();
-
+ if(name.equals("")||gender.equals("")||house.equals("")||city.equals(""))
+        {
+            JOptionPane.showMessageDialog(this, "Please add mandatory feild....");
+            return;
+        }
+        
             CommunityAdmin updateca = new CommunityAdmin();            
             //-- set updated value on the table row
             updateca.setName(name);

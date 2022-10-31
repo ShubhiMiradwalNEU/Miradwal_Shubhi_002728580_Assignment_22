@@ -190,6 +190,12 @@ public class ShowDAJPanel extends javax.swing.JPanel {
             String house = txtHouse.getText();
             String hospitalName = txtHospitalName.getText();
             String city = (String)comboBoxCommunity.getSelectedItem();
+            
+            if(name.equals("")||gender.equals("")||house.equals("")||physicianType.equals("")||city.equals("")||hospitalName.equals(""))
+        {
+            JOptionPane.showMessageDialog(this, "Please add mandatory feild....");
+            return;
+        }
 
             Doctor updateDoc = new Doctor();            
             //-- set updated value on the table row

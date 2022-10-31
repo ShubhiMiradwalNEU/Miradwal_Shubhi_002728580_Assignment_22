@@ -4,6 +4,7 @@
  */
 package ui;
 
+import java.util.UUID;
 import javax.swing.JOptionPane;
 import model.HospitalAdmin;
 import model.Person;
@@ -21,6 +22,7 @@ public class LoginJPanel extends javax.swing.JPanel {
     Person person = new Person();
     public LoginJPanel() {
         initComponents();
+        //createsystemadmin();
     }
 
        public static  String cacity;
@@ -143,14 +145,15 @@ public class LoginJPanel extends javax.swing.JPanel {
         
         String username = txtUsername.getText();
         String password = jPasswordField1.getText();
-
-        System.out.println("====== LOGIN PAGE ==========");
-        System.out.println("username- "+username);
-        System.out.println("password- "+password);
-
+          if(username.equals("")||password.equals(""))  
+          {
+              JOptionPane.showMessageDialog(this, "Enter all mandatory feild...");
+  
+          }
+       
         for(Person person: Person.getPersonDirectory()){
             if((person.getPassword().equals(password))&&person.getUserName().equals(username)){
-                System.out.println("== Username and Password Matches for== "+person.getUserType());
+   
                 
                 if(person.getUserType().equals("system admin")){
                     
@@ -188,33 +191,13 @@ public class LoginJPanel extends javax.swing.JPanel {
                     
                     
                 }
-                else{
-                    JOptionPane.showMessageDialog(this, "Invalid Username or Password");
-                }
             }
-//            else{
-//                JOptionPane.showMessageDialog(this, "Invalid Username or Password");
-//            }
+            else{
+                JOptionPane.showMessageDialog(this, "Invalid Username or Password");
+            }
     }
-        
-//        if (username.equals("hospitalAdmin") && password.equals("1234")){
-//            System.out.println("== Username and Password Matches ==");
-//            HAJFrame hospAdmin = new HAJFrame();
-//            hospAdmin.setVisible(true);
-//        }
-//        else if (username.equals("communityAdmin") && password.equals("12345")){
-//            System.out.println("== Username and Password Matches ==");
-//            CAJFrame communityAdmin = new CAJFrame();
-//            communityAdmin.setVisible(true);
-//        }
-//        else if (username.equals("systemAdmin") && password.equals("123456")){
-//            System.out.println("== Username and Password Matches ==");
-//            SAJFrame systemAdmin = new SAJFrame();
-//            systemAdmin.setVisible(true);
-//        }
-
     }//GEN-LAST:event_btnLoginActionPerformed
-
+ 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnLogin;
